@@ -1,0 +1,37 @@
+﻿criterio;indicador;peso_especifica;peso_geral;criterio_desempate;sub_indicador;calculado;direcao_indicador
+Avaliação pelo Cliente;ISQP;100;25;0;0;0;maior melhor
+Avaliação pelo Cliente;ISG;0;0;1;0;0;maior melhor
+Avaliação pelo Cliente;IAC;0;0;1;0;0;maior melhor
+Gestão Econômica Financeira;REMUN CRITERIO SETORIAL;20;5;0;0;0;maior melhor
+Gestão Econômica Financeira;RESULTADO OPERACIONAL;20;5;0;0;0;maior melhor
+Gestão Econômica Financeira;COBERTURA;20;5;0;0;0;menor melhor
+Gestão Econômica Financeira;EFICIENCIA CAPITAL GIRO;20;5;0;0;0;maior melhor
+Gestão Econômica Financeira;EFICIENCIA CAPITAL PROPRIO TERCEIROS;20;5;0;0;0;maior melhor
+Gestão Operacional;PERDAS DESVIO;10;2,5;0;0;1;menor melhor
+Gestão Operacional;DEC;20;5;0;0;1;maior melhor
+Gestão Operacional;FEC;20;5;0;0;1;maior melhor
+Gestão Operacional;TG PROPRIO;10;2,5;0;0;0;menor melhor
+Gestão Operacional;TF PROPRIO;10;2,5;0;0;0;menor melhor
+Gestão Operacional;INADIMPLENCIA;10;2,5;0;0;0;menor melhor
+Gestão Operacional;INS;5;1,25;0;0;0;maior melhor
+Gestão Operacional;FER;5;1,25;0;0;0;menor melhor
+Gestão Operacional;PSP;10;2,5;0;0;0;maior melhor
+Qualidade de Gestão;RELATORIO GESTAO;100;15;0;0;0;maior melhor
+Responsabilidade Socioambiental;MEDIA IDAT RS 3 ANOS;25;2,5;0;0;0;maior melhor
+Responsabilidade Socioambiental;ETHOS;65;6,5;0;0;0;maior melhor
+Responsabilidade Socioambiental;TG POPULACAO;5;0,5;0;0;0;menor melhor
+Responsabilidade Socioambiental;TF POPULACAO;5;0,5;0;0;0;menor melhor
+Gestão Operacional;PERDAS APURADO;0;0;1;1;0;menor melhor
+Gestão Operacional;PERDAS REFERENCIAL;0;0;1;1;0;maior melhor
+Gestão Operacional;DEC INTERNO ANTERIOR;0;0;0;1;0;menor melhor
+Gestão Operacional;DEC INTERNO;30;30;0;1;1;menor melhor
+Gestão Operacional;DEC APURADO;0;0;0;1;0;menor melhor
+Gestão Operacional;DEC ANEEL;0;0;0;1;0;maior melhor
+Gestão Operacional;DEC DESVIO;40;40;0;1;1;menor melhor
+Gestão Operacional;DEC EVOLUCAO;30;30;0;1;1;menor melhor
+Gestão Operacional;FEC INTERNO ANTERIOR;0;0;0;1;0;menor melhor
+Gestão Operacional;FEC INTERNO;30;30;0;1;1;menor melhor
+Gestão Operacional;FEC APURADO;0;0;0;1;0;menor melhor
+Gestão Operacional;FEC ANEEL;0;0;0;1;0;maior melhor
+Gestão Operacional;FEC DESVIO;40;40;0;1;1;menor melhor
+Gestão Operacional;FEC EVOLUCAO;30;30;0;1;1;menor melhor

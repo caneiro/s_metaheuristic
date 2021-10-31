@@ -1,0 +1,1057 @@
+,empresa,indicador,valor,na,nd,criterio,peso_especifica,peso_geral,criterio_desempate,sub_indicador,calculado,direcao_indicador
+155,AMAZONAS ENERGIA,COBERTURA,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+156,CEEE,COBERTURA,,1.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+157,CELESC,COBERTURA,1.8508552,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+158,CELPE,COBERTURA,6.811617,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+159,CEMIG,COBERTURA,3.6196373,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+160,COELBA,COBERTURA,3.7138524,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+161,COPEL,COBERTURA,1.4166554,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+162,COSERN,COBERTURA,2.5580914,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+163,CPFL PAULISTA,COBERTURA,4.4936576,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+164,CPFL PIRATININGA,COBERTURA,3.4255526,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+165,EDP ES,COBERTURA,4.8214936,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+166,EDP SP,COBERTURA,3.41,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+167,ELEKTRO,COBERTURA,2.5130832,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+168,ENEL CE,COBERTURA,4.379044,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+169,ENEL GO,COBERTURA,4.9835553,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+170,ENEL RJ,COBERTURA,10.0363245,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+171,ENEL SP,COBERTURA,5.0813956,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+172,ENERGISA MS,COBERTURA,1.9205763,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+173,ENERGISA MT,COBERTURA,2.3337293,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+174,ENERGISA PB,COBERTURA,1.2073869,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+175,ENERGISA RO,COBERTURA,42.100285,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+176,ENERGISA SE,COBERTURA,2.7588608,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+177,ENERGISA SS,COBERTURA,2.2189474,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+178,ENERGISA TO,COBERTURA,2.2548811,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+179,EQTL ALAGOAS,COBERTURA,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+180,EQTL MARANHÃO,COBERTURA,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+181,EQTL PARÁ,COBERTURA,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+182,EQTL PIAUÍ,COBERTURA,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+183,LIGHT,COBERTURA,7.194871,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+184,NEOENERGIA BRASÍLIA,COBERTURA,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+185,RGE,COBERTURA,3.8654845,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,menor melhor
+279,,DEC,,,,Gestão Operacional,20,5.0,0,0,1,maior melhor
+777,AMAZONAS ENERGIA,DEC ANEEL,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+778,CEEE,DEC ANEEL,9.17,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+779,CELESC,DEC ANEEL,10.94,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+780,CELPE,DEC ANEEL,13.4,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+781,CEMIG,DEC ANEEL,10.32,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+782,COELBA,DEC ANEEL,14.11,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+783,COPEL,DEC ANEEL,9.79,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+784,COSERN,DEC ANEEL,11.92,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+785,CPFL PAULISTA,DEC ANEEL,7.18,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+786,CPFL PIRATININGA,DEC ANEEL,6.42,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+787,EDP ES,DEC ANEEL,9.47,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+788,EDP SP,DEC ANEEL,7.71,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+789,ELEKTRO,DEC ANEEL,8.31,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+790,ENEL CE,DEC ANEEL,10.15,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+791,ENEL GO,DEC ANEEL,12.92,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+792,ENEL RJ,DEC ANEEL,10.16,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+793,ENEL SP,DEC ANEEL,7.4,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+794,ENERGISA MS,DEC ANEEL,11.5,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+795,ENERGISA MT,DEC ANEEL,21.47,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+796,ENERGISA PB,DEC ANEEL,15.97,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+797,ENERGISA RO,DEC ANEEL,27.45,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+798,ENERGISA SE,DEC ANEEL,12.05,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+799,ENERGISA SS,DEC ANEEL,7.57,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+800,ENERGISA TO,DEC ANEEL,23.55,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+801,EQTL ALAGOAS,DEC ANEEL,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+802,EQTL MARANHÃO,DEC ANEEL,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+803,EQTL PARÁ,DEC ANEEL,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+804,EQTL PIAUÍ,DEC ANEEL,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+805,LIGHT,DEC ANEEL,8.33,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+806,NEOENERGIA BRASÍLIA,DEC ANEEL,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+807,RGE,DEC ANEEL,11.14,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+746,AMAZONAS ENERGIA,DEC APURADO,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+747,CEEE,DEC APURADO,20.0,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+748,CELESC,DEC APURADO,9.21,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+749,CELPE,DEC APURADO,13.0,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+750,CEMIG,DEC APURADO,9.64,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+751,COELBA,DEC APURADO,12.44,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+752,COPEL,DEC APURADO,7.83,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+753,COSERN,DEC APURADO,9.2,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+754,CPFL PAULISTA,DEC APURADO,6.81,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+755,CPFL PIRATININGA,DEC APURADO,5.84,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+756,EDP ES,DEC APURADO,7.85,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+757,EDP SP,DEC APURADO,7.16,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+758,ELEKTRO,DEC APURADO,7.57,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+759,ENEL CE,DEC APURADO,16.51,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+760,ENEL GO,DEC APURADO,17.03,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+761,ENEL RJ,DEC APURADO,11.24,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+762,ENEL SP,DEC APURADO,7.52,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+763,ENERGISA MS,DEC APURADO,10.0,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+764,ENERGISA MT,DEC APURADO,17.48,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+765,ENERGISA PB,DEC APURADO,14.22,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+766,ENERGISA RO,DEC APURADO,35.7,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+767,ENERGISA SE,DEC APURADO,10.57,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+768,ENERGISA SS,DEC APURADO,4.94,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+769,ENERGISA TO,DEC APURADO,18.0,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+770,EQTL ALAGOAS,DEC APURADO,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+771,EQTL MARANHÃO,DEC APURADO,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+772,EQTL PARÁ,DEC APURADO,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+773,EQTL PIAUÍ,DEC APURADO,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+774,LIGHT,DEC APURADO,6.69,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+775,NEOENERGIA BRASÍLIA,DEC APURADO,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+776,RGE,DEC APURADO,10.83,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+808,AMAZONAS ENERGIA,DEC DESVIO,,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+809,CEEE,DEC DESVIO,2.181025,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+810,CELESC,DEC DESVIO,0.8418647,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+811,CELPE,DEC DESVIO,0.9701493,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+812,CEMIG,DEC DESVIO,0.93410856,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+813,COELBA,DEC DESVIO,0.88164425,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+814,COPEL,DEC DESVIO,0.7997957,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+815,COSERN,DEC DESVIO,0.7718121,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+816,CPFL PAULISTA,DEC DESVIO,0.94846797,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+817,CPFL PIRATININGA,DEC DESVIO,0.9096573,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+818,EDP ES,DEC DESVIO,0.8289335,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+819,EDP SP,DEC DESVIO,0.9286641,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+820,ELEKTRO,DEC DESVIO,0.91095066,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+821,ENEL CE,DEC DESVIO,1.626601,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+822,ENEL GO,DEC DESVIO,1.3181114,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+823,ENEL RJ,DEC DESVIO,1.1062992,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+824,ENEL SP,DEC DESVIO,1.0162162,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+825,ENERGISA MS,DEC DESVIO,0.8695652,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+826,ENERGISA MT,DEC DESVIO,0.8141593,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+827,ENERGISA PB,DEC DESVIO,0.89041954,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+828,ENERGISA RO,DEC DESVIO,1.3005464,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+829,ENERGISA SE,DEC DESVIO,0.87717843,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+830,ENERGISA SS,DEC DESVIO,0.65257597,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+831,ENERGISA TO,DEC DESVIO,0.7643312,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+832,EQTL ALAGOAS,DEC DESVIO,,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+833,EQTL MARANHÃO,DEC DESVIO,,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+834,EQTL PARÁ,DEC DESVIO,,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+835,EQTL PIAUÍ,DEC DESVIO,,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+836,LIGHT,DEC DESVIO,0.80312127,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+837,NEOENERGIA BRASÍLIA,DEC DESVIO,,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+838,RGE,DEC DESVIO,0.9721724,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+839,AMAZONAS ENERGIA,DEC EVOLUCAO,,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+840,CEEE,DEC EVOLUCAO,6.6849313,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+841,CELESC,DEC EVOLUCAO,-15.356152,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+842,CELPE,DEC EVOLUCAO,9.754029,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+843,CEMIG,DEC EVOLUCAO,-9.280303,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+844,COELBA,DEC EVOLUCAO,3.220339,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+845,COPEL,DEC EVOLUCAO,-14.175824,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+846,COSERN,DEC EVOLUCAO,-10.130391,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+847,CPFL PAULISTA,DEC EVOLUCAO,1.1922504,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+848,CPFL PIRATININGA,DEC EVOLUCAO,-10.046368,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+849,EDP ES,DEC EVOLUCAO,-2.8465347,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+850,EDP SP,DEC EVOLUCAO,2.5787966,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+851,ELEKTRO,DEC EVOLUCAO,0.807537,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+852,ENEL CE,DEC EVOLUCAO,17.132616,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+853,ENEL GO,DEC EVOLUCAO,-28.697184,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+854,ENEL RJ,DEC EVOLUCAO,-18.683813,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+855,ENEL SP,DEC EVOLUCAO,18.22504,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+856,ENERGISA MS,DEC EVOLUCAO,-7.4142723,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+857,ENERGISA MT,DEC EVOLUCAO,-12.367491,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+858,ENERGISA PB,DEC EVOLUCAO,4.1853514,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+859,ENERGISA RO,DEC EVOLUCAO,-25.026783,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+860,ENERGISA SE,DEC EVOLUCAO,-0.4708098,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+861,ENERGISA SS,DEC EVOLUCAO,-14.535902,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+862,ENERGISA TO,DEC EVOLUCAO,-16.27907,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+863,EQTL ALAGOAS,DEC EVOLUCAO,,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+864,EQTL MARANHÃO,DEC EVOLUCAO,,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+865,EQTL PARÁ,DEC EVOLUCAO,,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+866,EQTL PIAUÍ,DEC EVOLUCAO,,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+867,LIGHT,DEC EVOLUCAO,-15.315315,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+868,NEOENERGIA BRASÍLIA,DEC EVOLUCAO,,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+869,RGE,DEC EVOLUCAO,-23.216885,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+715,AMAZONAS ENERGIA,DEC INTERNO,,0.0,1.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+716,CEEE,DEC INTERNO,19.47,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+717,CELESC,DEC INTERNO,9.15,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+718,CELPE,DEC INTERNO,12.94,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+719,CEMIG,DEC INTERNO,9.58,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+720,COELBA,DEC INTERNO,12.18,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+721,COPEL,DEC INTERNO,7.81,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+722,COSERN,DEC INTERNO,8.96,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+723,CPFL PAULISTA,DEC INTERNO,6.79,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+724,CPFL PIRATININGA,DEC INTERNO,5.82,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+725,EDP ES,DEC INTERNO,7.85,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+726,EDP SP,DEC INTERNO,7.16,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+727,ELEKTRO,DEC INTERNO,7.49,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+728,ENEL CE,DEC INTERNO,16.34,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+729,ENEL GO,DEC INTERNO,16.2,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+730,ENEL RJ,DEC INTERNO,10.75,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+731,ENEL SP,DEC INTERNO,7.46,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+732,ENERGISA MS,DEC INTERNO,9.99,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+733,ENERGISA MT,DEC INTERNO,17.36,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+734,ENERGISA PB,DEC INTERNO,13.94,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+735,ENERGISA RO,DEC INTERNO,34.99,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+736,ENERGISA SE,DEC INTERNO,10.57,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+737,ENERGISA SS,DEC INTERNO,4.88,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+738,ENERGISA TO,DEC INTERNO,18.0,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+739,EQTL ALAGOAS,DEC INTERNO,,0.0,1.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+740,EQTL MARANHÃO,DEC INTERNO,,0.0,1.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+741,EQTL PARÁ,DEC INTERNO,,0.0,1.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+742,EQTL PIAUÍ,DEC INTERNO,,0.0,1.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+743,LIGHT,DEC INTERNO,6.58,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+744,NEOENERGIA BRASÍLIA,DEC INTERNO,,0.0,1.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+745,RGE,DEC INTERNO,10.55,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+684,AMAZONAS ENERGIA,DEC INTERNO ANTERIOR,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+685,CEEE,DEC INTERNO ANTERIOR,18.25,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+686,CELESC,DEC INTERNO ANTERIOR,10.81,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+687,CELPE,DEC INTERNO ANTERIOR,11.79,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+688,CEMIG,DEC INTERNO ANTERIOR,10.56,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+689,COELBA,DEC INTERNO ANTERIOR,11.8,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+690,COPEL,DEC INTERNO ANTERIOR,9.1,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+691,COSERN,DEC INTERNO ANTERIOR,9.97,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+692,CPFL PAULISTA,DEC INTERNO ANTERIOR,6.71,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+693,CPFL PIRATININGA,DEC INTERNO ANTERIOR,6.47,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+694,EDP ES,DEC INTERNO ANTERIOR,8.08,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+695,EDP SP,DEC INTERNO ANTERIOR,6.98,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+696,ELEKTRO,DEC INTERNO ANTERIOR,7.43,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+697,ENEL CE,DEC INTERNO ANTERIOR,13.95,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+698,ENEL GO,DEC INTERNO ANTERIOR,22.72,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+699,ENEL RJ,DEC INTERNO ANTERIOR,13.22,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+700,ENEL SP,DEC INTERNO ANTERIOR,6.31,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+701,ENERGISA MS,DEC INTERNO ANTERIOR,10.79,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+702,ENERGISA MT,DEC INTERNO ANTERIOR,19.81,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+703,ENERGISA PB,DEC INTERNO ANTERIOR,13.38,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+704,ENERGISA RO,DEC INTERNO ANTERIOR,46.67,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+705,ENERGISA SE,DEC INTERNO ANTERIOR,10.62,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+706,ENERGISA SS,DEC INTERNO ANTERIOR,5.71,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+707,ENERGISA TO,DEC INTERNO ANTERIOR,21.5,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+708,EQTL ALAGOAS,DEC INTERNO ANTERIOR,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+709,EQTL MARANHÃO,DEC INTERNO ANTERIOR,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+710,EQTL PARÁ,DEC INTERNO ANTERIOR,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+711,EQTL PIAUÍ,DEC INTERNO ANTERIOR,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+712,LIGHT,DEC INTERNO ANTERIOR,7.77,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+713,NEOENERGIA BRASÍLIA,DEC INTERNO ANTERIOR,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+714,RGE,DEC INTERNO ANTERIOR,13.74,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+186,AMAZONAS ENERGIA,EFICIENCIA CAPITAL GIRO,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+187,CEEE,EFICIENCIA CAPITAL GIRO,,1.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+188,CELESC,EFICIENCIA CAPITAL GIRO,1.112222,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+189,CELPE,EFICIENCIA CAPITAL GIRO,1.0048251,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+190,CEMIG,EFICIENCIA CAPITAL GIRO,2.3816202,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+191,COELBA,EFICIENCIA CAPITAL GIRO,0.7035639,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+192,COPEL,EFICIENCIA CAPITAL GIRO,0.8530176,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+193,COSERN,EFICIENCIA CAPITAL GIRO,0.83449477,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+194,CPFL PAULISTA,EFICIENCIA CAPITAL GIRO,1.287012,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+195,CPFL PIRATININGA,EFICIENCIA CAPITAL GIRO,0.7076989,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+196,EDP ES,EFICIENCIA CAPITAL GIRO,0.9014743,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+197,EDP SP,EFICIENCIA CAPITAL GIRO,1.09,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+198,ELEKTRO,EFICIENCIA CAPITAL GIRO,0.92676765,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+199,ENEL CE,EFICIENCIA CAPITAL GIRO,1.4120328,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+200,ENEL GO,EFICIENCIA CAPITAL GIRO,0.23764643,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+201,ENEL RJ,EFICIENCIA CAPITAL GIRO,1.0051893,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+202,ENEL SP,EFICIENCIA CAPITAL GIRO,0.77803284,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+203,ENERGISA MS,EFICIENCIA CAPITAL GIRO,1.0650474,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+204,ENERGISA MT,EFICIENCIA CAPITAL GIRO,1.2773832,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+205,ENERGISA PB,EFICIENCIA CAPITAL GIRO,1.096311,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+206,ENERGISA RO,EFICIENCIA CAPITAL GIRO,-0.55145735,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+207,ENERGISA SE,EFICIENCIA CAPITAL GIRO,1.2505708,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+208,ENERGISA SS,EFICIENCIA CAPITAL GIRO,1.2475843,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+209,ENERGISA TO,EFICIENCIA CAPITAL GIRO,1.0612253,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+210,EQTL ALAGOAS,EFICIENCIA CAPITAL GIRO,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+211,EQTL MARANHÃO,EFICIENCIA CAPITAL GIRO,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+212,EQTL PARÁ,EFICIENCIA CAPITAL GIRO,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+213,EQTL PIAUÍ,EFICIENCIA CAPITAL GIRO,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+214,LIGHT,EFICIENCIA CAPITAL GIRO,1.3278607,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+215,NEOENERGIA BRASÍLIA,EFICIENCIA CAPITAL GIRO,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+216,RGE,EFICIENCIA CAPITAL GIRO,1.0553226,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+217,AMAZONAS ENERGIA,EFICIENCIA CAPITAL PROPRIO TERCEIROS,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+218,CEEE,EFICIENCIA CAPITAL PROPRIO TERCEIROS,,1.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+219,CELESC,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.71,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+220,CELPE,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.44,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+221,CEMIG,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.67,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+222,COELBA,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.54,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+223,COPEL,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.53,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+224,COSERN,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.44,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+225,CPFL PAULISTA,EFICIENCIA CAPITAL PROPRIO TERCEIROS,6.44,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+226,CPFL PIRATININGA,EFICIENCIA CAPITAL PROPRIO TERCEIROS,8.25,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+227,EDP ES,EFICIENCIA CAPITAL PROPRIO TERCEIROS,2.0,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+228,EDP SP,EFICIENCIA CAPITAL PROPRIO TERCEIROS,2.11,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+229,ELEKTRO,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.11,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+230,ENEL CE,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.14,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+231,ENEL GO,EFICIENCIA CAPITAL PROPRIO TERCEIROS,0.4,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+232,ENEL RJ,EFICIENCIA CAPITAL PROPRIO TERCEIROS,0.25,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+233,ENEL SP,EFICIENCIA CAPITAL PROPRIO TERCEIROS,2.25,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+234,ENERGISA MS,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.32,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+235,ENERGISA MT,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.33,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+236,ENERGISA PB,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.32,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+237,ENERGISA RO,EFICIENCIA CAPITAL PROPRIO TERCEIROS,,1.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+238,ENERGISA SE,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.79,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+239,ENERGISA SS,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.17,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+240,ENERGISA TO,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.38,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+241,EQTL ALAGOAS,EFICIENCIA CAPITAL PROPRIO TERCEIROS,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+242,EQTL MARANHÃO,EFICIENCIA CAPITAL PROPRIO TERCEIROS,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+243,EQTL PARÁ,EFICIENCIA CAPITAL PROPRIO TERCEIROS,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+244,EQTL PIAUÍ,EFICIENCIA CAPITAL PROPRIO TERCEIROS,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+245,LIGHT,EFICIENCIA CAPITAL PROPRIO TERCEIROS,0.71,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+246,NEOENERGIA BRASÍLIA,EFICIENCIA CAPITAL PROPRIO TERCEIROS,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+247,RGE,EFICIENCIA CAPITAL PROPRIO TERCEIROS,1.58,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+529,AMAZONAS ENERGIA,ETHOS,,0.0,1.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+530,CEEE,ETHOS,3.17,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+531,CELESC,ETHOS,6.21,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+532,CELPE,ETHOS,6.76,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+533,CEMIG,ETHOS,5.35,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+534,COELBA,ETHOS,6.74,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+535,COPEL,ETHOS,6.63,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+536,COSERN,ETHOS,6.92,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+537,CPFL PAULISTA,ETHOS,7.05,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+538,CPFL PIRATININGA,ETHOS,7.38,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+539,EDP ES,ETHOS,6.12,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+540,EDP SP,ETHOS,6.34,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+541,ELEKTRO,ETHOS,6.95,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+542,ENEL CE,ETHOS,7.03,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+543,ENEL GO,ETHOS,6.34,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+544,ENEL RJ,ETHOS,6.63,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+545,ENEL SP,ETHOS,7.28,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+546,ENERGISA MS,ETHOS,5.84,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+547,ENERGISA MT,ETHOS,4.97,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+548,ENERGISA PB,ETHOS,5.78,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+549,ENERGISA RO,ETHOS,5.12,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+550,ENERGISA SE,ETHOS,5.71,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+551,ENERGISA SS,ETHOS,6.16,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+552,ENERGISA TO,ETHOS,5.66,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+553,EQTL ALAGOAS,ETHOS,,0.0,1.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+554,EQTL MARANHÃO,ETHOS,,0.0,1.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+555,EQTL PARÁ,ETHOS,,0.0,1.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+556,EQTL PIAUÍ,ETHOS,,0.0,1.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+557,LIGHT,ETHOS,5.1,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+558,NEOENERGIA BRASÍLIA,ETHOS,,0.0,1.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+559,RGE,ETHOS,7.19,0.0,0.0,Responsabilidade Socioambiental,65,6.5,0,0,0,maior melhor
+280,,FEC,,,,Gestão Operacional,20,5.0,0,0,1,maior melhor
+963,AMAZONAS ENERGIA,FEC ANEEL,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+964,CEEE,FEC ANEEL,6.97,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+965,CELESC,FEC ANEEL,8.65,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+966,CELPE,FEC ANEEL,8.34,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+967,CEMIG,FEC ANEEL,6.98,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+968,COELBA,FEC ANEEL,7.87,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+969,COPEL,FEC ANEEL,7.38,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+970,COSERN,FEC ANEEL,8.01,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+971,CPFL PAULISTA,FEC ANEEL,6.04,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+972,CPFL PIRATININGA,FEC ANEEL,5.68,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+973,EDP ES,FEC ANEEL,6.87,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+974,EDP SP,FEC ANEEL,6.03,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+975,ELEKTRO,FEC ANEEL,6.39,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+976,ENEL CE,FEC ANEEL,7.32,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+977,ENEL GO,FEC ANEEL,9.89,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+978,ENEL RJ,FEC ANEEL,7.28,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+979,ENEL SP,FEC ANEEL,5.15,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+980,ENERGISA MS,FEC ANEEL,8.16,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+981,ENERGISA MT,FEC ANEEL,17.05,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+982,ENERGISA PB,FEC ANEEL,9.5,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+983,ENERGISA RO,FEC ANEEL,18.84,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+984,ENERGISA SE,FEC ANEEL,8.11,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+985,ENERGISA SS,FEC ANEEL,7.25,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+986,ENERGISA TO,FEC ANEEL,15.67,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+987,EQTL ALAGOAS,FEC ANEEL,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+988,EQTL MARANHÃO,FEC ANEEL,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+989,EQTL PARÁ,FEC ANEEL,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+990,EQTL PIAUÍ,FEC ANEEL,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+991,LIGHT,FEC ANEEL,5.99,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+992,NEOENERGIA BRASÍLIA,FEC ANEEL,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+993,RGE,FEC ANEEL,8.4,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,maior melhor
+932,AMAZONAS ENERGIA,FEC APURADO,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+933,CEEE,FEC APURADO,10.6,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+934,CELESC,FEC APURADO,6.69,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+935,CELPE,FEC APURADO,5.51,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+936,CEMIG,FEC APURADO,5.05,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+937,COELBA,FEC APURADO,5.54,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+938,COPEL,FEC APURADO,5.61,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+939,COSERN,FEC APURADO,3.85,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+940,CPFL PAULISTA,FEC APURADO,4.27,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+941,CPFL PIRATININGA,FEC APURADO,4.32,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+942,EDP ES,FEC APURADO,4.01,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+943,EDP SP,FEC APURADO,4.62,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+944,ELEKTRO,FEC APURADO,4.49,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+945,ENEL CE,FEC APURADO,6.3,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+946,ENEL GO,FEC APURADO,9.61,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+947,ENEL RJ,FEC APURADO,6.51,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+948,ENEL SP,FEC APURADO,3.83,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+949,ENERGISA MS,FEC APURADO,4.31,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+950,ENERGISA MT,FEC APURADO,7.77,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+951,ENERGISA PB,FEC APURADO,5.61,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+952,ENERGISA RO,FEC APURADO,17.2,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+953,ENERGISA SE,FEC APURADO,4.99,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+954,ENERGISA SS,FEC APURADO,4.29,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+955,ENERGISA TO,FEC APURADO,7.9,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+956,EQTL ALAGOAS,FEC APURADO,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+957,EQTL MARANHÃO,FEC APURADO,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+958,EQTL PARÁ,FEC APURADO,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+959,EQTL PIAUÍ,FEC APURADO,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+960,LIGHT,FEC APURADO,4.45,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+961,NEOENERGIA BRASÍLIA,FEC APURADO,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+962,RGE,FEC APURADO,5.27,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+994,AMAZONAS ENERGIA,FEC DESVIO,,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+995,CEEE,FEC DESVIO,1.5208035,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+996,CELESC,FEC DESVIO,0.7734104,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+997,CELPE,FEC DESVIO,0.6606715,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+998,CEMIG,FEC DESVIO,0.7234957,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+999,COELBA,FEC DESVIO,0.703939,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1000,COPEL,FEC DESVIO,0.7601626,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1001,COSERN,FEC DESVIO,0.4806492,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1002,CPFL PAULISTA,FEC DESVIO,0.70695364,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1003,CPFL PIRATININGA,FEC DESVIO,0.7605634,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1004,EDP ES,FEC DESVIO,0.58369726,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1005,EDP SP,FEC DESVIO,0.76616913,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1006,ELEKTRO,FEC DESVIO,0.7026604,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1007,ENEL CE,FEC DESVIO,0.8606557,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1008,ENEL GO,FEC DESVIO,0.97168857,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1009,ENEL RJ,FEC DESVIO,0.8942308,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1010,ENEL SP,FEC DESVIO,0.7436893,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1011,ENERGISA MS,FEC DESVIO,0.52818626,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1012,ENERGISA MT,FEC DESVIO,0.4557185,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1013,ENERGISA PB,FEC DESVIO,0.59052634,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1014,ENERGISA RO,FEC DESVIO,0.9129512,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1015,ENERGISA SE,FEC DESVIO,0.61528975,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1016,ENERGISA SS,FEC DESVIO,0.59172416,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1017,ENERGISA TO,FEC DESVIO,0.50414807,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1018,EQTL ALAGOAS,FEC DESVIO,,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1019,EQTL MARANHÃO,FEC DESVIO,,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1020,EQTL PARÁ,FEC DESVIO,,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1021,EQTL PIAUÍ,FEC DESVIO,,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1022,LIGHT,FEC DESVIO,0.74290484,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1023,NEOENERGIA BRASÍLIA,FEC DESVIO,,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1024,RGE,FEC DESVIO,0.62738097,0.0,0.0,Gestão Operacional,40,40.0,0,1,1,menor melhor
+1025,AMAZONAS ENERGIA,FEC EVOLUCAO,,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1026,CEEE,FEC EVOLUCAO,3.4663866,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1027,CELESC,FEC EVOLUCAO,-11.780456,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1028,CELPE,FEC EVOLUCAO,-0.37383178,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1029,CEMIG,FEC EVOLUCAO,0.20618556,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1030,COELBA,FEC EVOLUCAO,-4.0816326,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1031,COPEL,FEC EVOLUCAO,-7.65391,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1032,COSERN,FEC EVOLUCAO,-23.56688,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1033,CPFL PAULISTA,FEC EVOLUCAO,-2.9953916,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1034,CPFL PIRATININGA,FEC EVOLUCAO,-1.3856813,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1035,EDP ES,FEC EVOLUCAO,-12.445415,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1036,EDP SP,FEC EVOLUCAO,2.2123895,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1037,ELEKTRO,FEC EVOLUCAO,3.3898306,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1038,ENEL CE,FEC EVOLUCAO,12.043796,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1039,ENEL GO,FEC EVOLUCAO,-13.806328,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1040,ENEL RJ,FEC EVOLUCAO,-22.012579,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1041,ENEL SP,FEC EVOLUCAO,4.8850574,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1042,ENERGISA MS,FEC EVOLUCAO,-3.6036036,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1043,ENERGISA MT,FEC EVOLUCAO,-8.078336,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1044,ENERGISA PB,FEC EVOLUCAO,-2.3809524,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1045,ENERGISA RO,FEC EVOLUCAO,-27.904762,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1046,ENERGISA SE,FEC EVOLUCAO,4.1753654,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1047,ENERGISA SS,FEC EVOLUCAO,-7.3634205,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1048,ENERGISA TO,FEC EVOLUCAO,1.171875,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1049,EQTL ALAGOAS,FEC EVOLUCAO,,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1050,EQTL MARANHÃO,FEC EVOLUCAO,,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1051,EQTL PARÁ,FEC EVOLUCAO,,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1052,EQTL PIAUÍ,FEC EVOLUCAO,,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1053,LIGHT,FEC EVOLUCAO,1.1600928,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1054,NEOENERGIA BRASÍLIA,FEC EVOLUCAO,,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+1055,RGE,FEC EVOLUCAO,-17.657045,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+901,AMAZONAS ENERGIA,FEC INTERNO,,0.0,1.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+902,CEEE,FEC INTERNO,9.85,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+903,CELESC,FEC INTERNO,6.59,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+904,CELPE,FEC INTERNO,5.33,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+905,CEMIG,FEC INTERNO,4.86,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+906,COELBA,FEC INTERNO,5.17,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+907,COPEL,FEC INTERNO,5.55,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+908,COSERN,FEC INTERNO,3.6,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+909,CPFL PAULISTA,FEC INTERNO,4.21,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+910,CPFL PIRATININGA,FEC INTERNO,4.27,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+911,EDP ES,FEC INTERNO,4.01,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+912,EDP SP,FEC INTERNO,4.62,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+913,ELEKTRO,FEC INTERNO,4.27,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+914,ENEL CE,FEC INTERNO,6.14,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+915,ENEL GO,FEC INTERNO,8.99,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+916,ENEL RJ,FEC INTERNO,6.2,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+917,ENEL SP,FEC INTERNO,3.65,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+918,ENERGISA MS,FEC INTERNO,4.28,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+919,ENERGISA MT,FEC INTERNO,7.51,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+920,ENERGISA PB,FEC INTERNO,4.92,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+921,ENERGISA RO,FEC INTERNO,15.14,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+922,ENERGISA SE,FEC INTERNO,4.99,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+923,ENERGISA SS,FEC INTERNO,3.9,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+924,ENERGISA TO,FEC INTERNO,7.77,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+925,EQTL ALAGOAS,FEC INTERNO,,0.0,1.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+926,EQTL MARANHÃO,FEC INTERNO,,0.0,1.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+927,EQTL PARÁ,FEC INTERNO,,0.0,1.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+928,EQTL PIAUÍ,FEC INTERNO,,0.0,1.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+929,LIGHT,FEC INTERNO,4.36,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+930,NEOENERGIA BRASÍLIA,FEC INTERNO,,0.0,1.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+931,RGE,FEC INTERNO,4.85,0.0,0.0,Gestão Operacional,30,30.0,0,1,1,menor melhor
+870,AMAZONAS ENERGIA,FEC INTERNO ANTERIOR,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+871,CEEE,FEC INTERNO ANTERIOR,9.52,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+872,CELESC,FEC INTERNO ANTERIOR,7.47,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+873,CELPE,FEC INTERNO ANTERIOR,5.35,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+874,CEMIG,FEC INTERNO ANTERIOR,4.85,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+875,COELBA,FEC INTERNO ANTERIOR,5.39,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+876,COPEL,FEC INTERNO ANTERIOR,6.01,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+877,COSERN,FEC INTERNO ANTERIOR,4.71,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+878,CPFL PAULISTA,FEC INTERNO ANTERIOR,4.34,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+879,CPFL PIRATININGA,FEC INTERNO ANTERIOR,4.33,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+880,EDP ES,FEC INTERNO ANTERIOR,4.58,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+881,EDP SP,FEC INTERNO ANTERIOR,4.52,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+882,ELEKTRO,FEC INTERNO ANTERIOR,4.13,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+883,ENEL CE,FEC INTERNO ANTERIOR,5.48,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+884,ENEL GO,FEC INTERNO ANTERIOR,10.43,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+885,ENEL RJ,FEC INTERNO ANTERIOR,7.95,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+886,ENEL SP,FEC INTERNO ANTERIOR,3.48,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+887,ENERGISA MS,FEC INTERNO ANTERIOR,4.44,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+888,ENERGISA MT,FEC INTERNO ANTERIOR,8.17,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+889,ENERGISA PB,FEC INTERNO ANTERIOR,5.04,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+890,ENERGISA RO,FEC INTERNO ANTERIOR,21.0,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+891,ENERGISA SE,FEC INTERNO ANTERIOR,4.79,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+892,ENERGISA SS,FEC INTERNO ANTERIOR,4.21,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+893,ENERGISA TO,FEC INTERNO ANTERIOR,7.68,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+894,EQTL ALAGOAS,FEC INTERNO ANTERIOR,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+895,EQTL MARANHÃO,FEC INTERNO ANTERIOR,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+896,EQTL PARÁ,FEC INTERNO ANTERIOR,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+897,EQTL PIAUÍ,FEC INTERNO ANTERIOR,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+898,LIGHT,FEC INTERNO ANTERIOR,4.31,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+899,NEOENERGIA BRASÍLIA,FEC INTERNO ANTERIOR,,0.0,1.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+900,RGE,FEC INTERNO ANTERIOR,5.89,0.0,0.0,Gestão Operacional,0,0.0,0,1,0,menor melhor
+405,AMAZONAS ENERGIA,FER,,0.0,1.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+406,CEEE,FER,5.19,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+407,CELESC,FER,7.54,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+408,CELPE,FER,5.12,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+409,CEMIG,FER,12.04,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+410,COELBA,FER,5.23,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+411,COPEL,FER,5.56,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+412,COSERN,FER,5.21,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+413,CPFL PAULISTA,FER,3.3,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+414,CPFL PIRATININGA,FER,3.79,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+415,EDP ES,FER,6.18,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+416,EDP SP,FER,6.55,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+417,ELEKTRO,FER,6.33,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+418,ENEL CE,FER,49.8,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+419,ENEL GO,FER,14.41,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+420,ENEL RJ,FER,11.13,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+421,ENEL SP,FER,20.06,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+422,ENERGISA MS,FER,12.1,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+423,ENERGISA MT,FER,11.36,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+424,ENERGISA PB,FER,8.9,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+425,ENERGISA RO,FER,35.73,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+426,ENERGISA SE,FER,5.35,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+427,ENERGISA SS,FER,3.69,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+428,ENERGISA TO,FER,6.01,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+429,EQTL ALAGOAS,FER,,0.0,1.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+430,EQTL MARANHÃO,FER,,0.0,1.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+431,EQTL PARÁ,FER,,0.0,1.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+432,EQTL PIAUÍ,FER,,0.0,1.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+433,LIGHT,FER,16.7,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+434,NEOENERGIA BRASÍLIA,FER,,0.0,1.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+435,RGE,FER,3.04,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,menor melhor
+62,AMAZONAS ENERGIA,IAC,,0.0,1.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+63,CEEE,IAC,69.12,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+64,CELESC,IAC,80.48,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+65,CELPE,IAC,65.92,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+66,CEMIG,IAC,73.12,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+67,COELBA,IAC,66.08,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+68,COPEL,IAC,83.84,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+69,COSERN,IAC,75.84,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+70,CPFL PAULISTA,IAC,78.24,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+71,CPFL PIRATININGA,IAC,76.8,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+72,EDP ES,IAC,76.48,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+73,EDP SP,IAC,78.88,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+74,ELEKTRO,IAC,76.0,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+75,ENEL CE,IAC,52.64,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+76,ENEL GO,IAC,47.36,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+77,ENEL RJ,IAC,59.68,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+78,ENEL SP,IAC,54.56,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+79,ENERGISA MS,IAC,66.72,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+80,ENERGISA MT,IAC,61.28,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+81,ENERGISA PB,IAC,80.64,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+82,ENERGISA RO,IAC,57.76,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+83,ENERGISA SE,IAC,77.12,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+84,ENERGISA SS,IAC,79.84,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+85,ENERGISA TO,IAC,70.56,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+86,EQTL ALAGOAS,IAC,,0.0,1.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+87,EQTL MARANHÃO,IAC,,0.0,1.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+88,EQTL PARÁ,IAC,,0.0,1.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+89,EQTL PIAUÍ,IAC,,0.0,1.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+90,LIGHT,IAC,52.16,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+91,NEOENERGIA BRASÍLIA,IAC,,0.0,1.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+92,RGE,IAC,76.16,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+343,AMAZONAS ENERGIA,INADIMPLENCIA,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+344,CEEE,INADIMPLENCIA,3.9023001,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+345,CELESC,INADIMPLENCIA,2.2758744,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+346,CELPE,INADIMPLENCIA,3.661967,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+347,CEMIG,INADIMPLENCIA,2.7334952,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+348,COELBA,INADIMPLENCIA,3.5688384,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+349,COPEL,INADIMPLENCIA,2.1804702,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+350,COSERN,INADIMPLENCIA,3.5699673,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+351,CPFL PAULISTA,INADIMPLENCIA,2.9297433,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+352,CPFL PIRATININGA,INADIMPLENCIA,2.362107,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+353,EDP ES,INADIMPLENCIA,3.4792767,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+354,EDP SP,INADIMPLENCIA,3.3322442,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+355,ELEKTRO,INADIMPLENCIA,2.5190327,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+356,ENEL CE,INADIMPLENCIA,5.481491,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+357,ENEL GO,INADIMPLENCIA,4.2647557,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+358,ENEL RJ,INADIMPLENCIA,5.057308,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+359,ENEL SP,INADIMPLENCIA,2.674274,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+360,ENERGISA MS,INADIMPLENCIA,3.1179,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+361,ENERGISA MT,INADIMPLENCIA,3.581431,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+362,ENERGISA PB,INADIMPLENCIA,3.0460649,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+363,ENERGISA RO,INADIMPLENCIA,4.96999,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+364,ENERGISA SE,INADIMPLENCIA,2.375741,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+365,ENERGISA SS,INADIMPLENCIA,1.907969,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+366,ENERGISA TO,INADIMPLENCIA,3.6986942,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+367,EQTL ALAGOAS,INADIMPLENCIA,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+368,EQTL MARANHÃO,INADIMPLENCIA,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+369,EQTL PARÁ,INADIMPLENCIA,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+370,EQTL PIAUÍ,INADIMPLENCIA,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+371,LIGHT,INADIMPLENCIA,3.1015007,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+372,NEOENERGIA BRASÍLIA,INADIMPLENCIA,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+373,RGE,INADIMPLENCIA,2.0400121,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+374,AMAZONAS ENERGIA,INS,,0.0,1.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+375,CEEE,INS,77.75,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+376,CELESC,INS,83.87,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+377,CELPE,INS,83.97,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+378,CEMIG,INS,74.18,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+379,COELBA,INS,83.17,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+380,COPEL,INS,92.56,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+381,COSERN,INS,85.03,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+382,CPFL PAULISTA,INS,81.87,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+383,CPFL PIRATININGA,INS,82.54,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+384,EDP ES,INS,92.32,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+385,EDP SP,INS,94.04,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+386,ELEKTRO,INS,79.14,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+387,ENEL CE,INS,86.1,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+388,ENEL GO,INS,89.82,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+389,ENEL RJ,INS,88.35,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+390,ENEL SP,INS,87.23,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+391,ENERGISA MS,INS,85.39,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+392,ENERGISA MT,INS,85.33,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+393,ENERGISA PB,INS,88.82,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+394,ENERGISA RO,INS,88.42,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+395,ENERGISA SE,INS,88.82,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+396,ENERGISA SS,INS,88.66,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+397,ENERGISA TO,INS,86.83,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+398,EQTL ALAGOAS,INS,,0.0,1.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+399,EQTL MARANHÃO,INS,,0.0,1.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+400,EQTL PARÁ,INS,,0.0,1.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+401,EQTL PIAUÍ,INS,,0.0,1.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+402,LIGHT,INS,88.68,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+403,NEOENERGIA BRASÍLIA,INS,,0.0,1.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+404,RGE,INS,83.39,0.0,0.0,Gestão Operacional,5,1.25,0,0,0,maior melhor
+31,AMAZONAS ENERGIA,ISG,,0.0,1.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+32,CEEE,ISG,66.45265,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+33,CELESC,ISG,77.52809,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+34,CELPE,ISG,55.68001,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+35,CEMIG,ISG,69.23077,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+36,COELBA,ISG,67.41573,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+37,COPEL,ISG,83.01282,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+38,COSERN,ISG,71.84,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+39,CPFL PAULISTA,ISG,71.107544,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+40,CPFL PIRATININGA,ISG,72.16,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+41,EDP ES,ISG,74.67949,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+42,EDP SP,ISG,69.71154,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+43,ELEKTRO,ISG,71.47436,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+44,ENEL CE,ISG,54.4,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+45,ENEL GO,ISG,55.68,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+46,ENEL RJ,ISG,57.76,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+47,ENEL SP,ISG,48.48,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+48,ENERGISA MS,ISG,62.820515,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+49,ENERGISA MT,ISG,61.28,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+50,ENERGISA PB,ISG,78.88,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+51,ENERGISA RO,ISG,53.46216,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+52,ENERGISA SE,ISG,71.84001,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+53,ENERGISA SS,ISG,76.76282,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+54,ENERGISA TO,ISG,67.84,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+55,EQTL ALAGOAS,ISG,,0.0,1.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+56,EQTL MARANHÃO,ISG,,0.0,1.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+57,EQTL PARÁ,ISG,,0.0,1.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+58,EQTL PIAUÍ,ISG,,0.0,1.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+59,LIGHT,ISG,46.4,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+60,NEOENERGIA BRASÍLIA,ISG,,0.0,1.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+61,RGE,ISG,73.6,0.0,0.0,Avaliação pelo Cliente,0,0.0,1,0,0,maior melhor
+0,AMAZONAS ENERGIA,ISQP,,0.0,1.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+1,CEEE,ISQP,64.80208,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+2,CELESC,ISQP,76.74152,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+3,CELPE,ISQP,64.53443,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+4,CEMIG,ISQP,69.811005,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+5,COELBA,ISQP,63.25433,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+6,COPEL,ISQP,78.74136,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+7,COSERN,ISQP,71.065796,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+8,CPFL PAULISTA,ISQP,72.62755,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+9,CPFL PIRATININGA,ISQP,70.93396,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+10,EDP ES,ISQP,72.555275,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+11,EDP SP,ISQP,69.46574,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+12,ELEKTRO,ISQP,69.98394,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+13,ENEL CE,ISQP,59.82362,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+14,ENEL GO,ISQP,59.93404,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+15,ENEL RJ,ISQP,63.61936,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+16,ENEL SP,ISQP,56.35586,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+17,ENERGISA MS,ISQP,67.62651,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+18,ENERGISA MT,ISQP,64.32484,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+19,ENERGISA PB,ISQP,77.66458,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+20,ENERGISA RO,ISQP,61.035606,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+21,ENERGISA SE,ISQP,67.21694,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+22,ENERGISA SS,ISQP,75.739716,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+23,ENERGISA TO,ISQP,70.27913,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+24,EQTL ALAGOAS,ISQP,,0.0,1.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+25,EQTL MARANHÃO,ISQP,,0.0,1.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+26,EQTL PARÁ,ISQP,,0.0,1.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+27,EQTL PIAUÍ,ISQP,,0.0,1.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+28,LIGHT,ISQP,56.35586,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+29,NEOENERGIA BRASÍLIA,ISQP,,0.0,1.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+30,RGE,ISQP,68.83299,0.0,0.0,Avaliação pelo Cliente,100,25.0,0,0,0,maior melhor
+498,AMAZONAS ENERGIA,MEDIA IDAT RS 3 ANOS,,0.0,1.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+499,CEEE,MEDIA IDAT RS 3 ANOS,64.22432,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+500,CELESC,MEDIA IDAT RS 3 ANOS,74.27991,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+501,CELPE,MEDIA IDAT RS 3 ANOS,61.15667,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+502,CEMIG,MEDIA IDAT RS 3 ANOS,72.428925,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+503,COELBA,MEDIA IDAT RS 3 ANOS,65.63152,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+504,COPEL,MEDIA IDAT RS 3 ANOS,79.363396,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+505,COSERN,MEDIA IDAT RS 3 ANOS,75.50633,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+506,CPFL PAULISTA,MEDIA IDAT RS 3 ANOS,73.78471,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+507,CPFL PIRATININGA,MEDIA IDAT RS 3 ANOS,72.43927,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+508,EDP ES,MEDIA IDAT RS 3 ANOS,70.39185,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+509,EDP SP,MEDIA IDAT RS 3 ANOS,73.851585,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+510,ELEKTRO,MEDIA IDAT RS 3 ANOS,71.758736,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+511,ENEL CE,MEDIA IDAT RS 3 ANOS,66.78708,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+512,ENEL GO,MEDIA IDAT RS 3 ANOS,57.62459,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+513,ENEL RJ,MEDIA IDAT RS 3 ANOS,59.439915,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+514,ENEL SP,MEDIA IDAT RS 3 ANOS,63.506603,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+515,ENERGISA MS,MEDIA IDAT RS 3 ANOS,69.339676,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+516,ENERGISA MT,MEDIA IDAT RS 3 ANOS,69.84704,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+517,ENERGISA PB,MEDIA IDAT RS 3 ANOS,78.01051,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+518,ENERGISA RO,MEDIA IDAT RS 3 ANOS,56.533455,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+519,ENERGISA SE,MEDIA IDAT RS 3 ANOS,73.17414,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+520,ENERGISA SS,MEDIA IDAT RS 3 ANOS,76.78195,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+521,ENERGISA TO,MEDIA IDAT RS 3 ANOS,70.75432,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+522,EQTL ALAGOAS,MEDIA IDAT RS 3 ANOS,,0.0,1.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+523,EQTL MARANHÃO,MEDIA IDAT RS 3 ANOS,,0.0,1.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+524,EQTL PARÁ,MEDIA IDAT RS 3 ANOS,,0.0,1.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+525,EQTL PIAUÍ,MEDIA IDAT RS 3 ANOS,,0.0,1.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+526,LIGHT,MEDIA IDAT RS 3 ANOS,55.153667,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+527,NEOENERGIA BRASÍLIA,MEDIA IDAT RS 3 ANOS,,0.0,1.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+528,RGE,MEDIA IDAT RS 3 ANOS,71.11272,0.0,0.0,Responsabilidade Socioambiental,25,2.5,0,0,0,maior melhor
+622,AMAZONAS ENERGIA,PERDAS APURADO,,0.0,1.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+623,CEEE,PERDAS APURADO,17.68,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+624,CELESC,PERDAS APURADO,8.06,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+625,CELPE,PERDAS APURADO,19.8,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+626,CEMIG,PERDAS APURADO,12.56,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+627,COELBA,PERDAS APURADO,17.22,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+628,COPEL,PERDAS APURADO,9.04,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+629,COSERN,PERDAS APURADO,11.29,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+630,CPFL PAULISTA,PERDAS APURADO,9.42,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+631,CPFL PIRATININGA,PERDAS APURADO,7.85,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+632,EDP ES,PERDAS APURADO,13.39,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+633,EDP SP,PERDAS APURADO,8.57,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+634,ELEKTRO,PERDAS APURADO,8.08,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+635,ENEL CE,PERDAS APURADO,16.18,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+636,ENEL GO,PERDAS APURADO,11.48,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+637,ENEL RJ,PERDAS APURADO,21.91,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+638,ENEL SP,PERDAS APURADO,10.64,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+639,ENERGISA MS,PERDAS APURADO,13.21,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+640,ENERGISA MT,PERDAS APURADO,14.41,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+641,ENERGISA PB,PERDAS APURADO,13.48,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+642,ENERGISA RO,PERDAS APURADO,26.59,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+643,ENERGISA SE,PERDAS APURADO,10.61,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+644,ENERGISA SS,PERDAS APURADO,6.53,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+645,ENERGISA TO,PERDAS APURADO,12.57,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+646,EQTL ALAGOAS,PERDAS APURADO,,0.0,1.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+647,EQTL MARANHÃO,PERDAS APURADO,,0.0,1.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+648,EQTL PARÁ,PERDAS APURADO,,0.0,1.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+649,EQTL PIAUÍ,PERDAS APURADO,,0.0,1.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+650,LIGHT,PERDAS APURADO,25.92,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+651,NEOENERGIA BRASÍLIA,PERDAS APURADO,,0.0,1.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+652,RGE,PERDAS APURADO,9.71,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,menor melhor
+248,AMAZONAS ENERGIA,PERDAS DESVIO,,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+249,CEEE,PERDAS DESVIO,1.9092872,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+250,CELESC,PERDAS DESVIO,1.0862534,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+251,CELPE,PERDAS DESVIO,1.2298137,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+252,CEMIG,PERDAS DESVIO,1.0988626,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+253,COELBA,PERDAS DESVIO,1.2,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+254,COPEL,PERDAS DESVIO,1.0736341,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+255,COSERN,PERDAS DESVIO,1.0482823,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+256,CPFL PAULISTA,PERDAS DESVIO,1.124105,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+257,CPFL PIRATININGA,PERDAS DESVIO,1.1966463,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+258,EDP ES,PERDAS DESVIO,1.1583045,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+259,EDP SP,PERDAS DESVIO,1.1919333,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+260,ELEKTRO,PERDAS DESVIO,0.9963009,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+261,ENEL CE,PERDAS DESVIO,1.1967455,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+262,ENEL GO,PERDAS DESVIO,0.96877635,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+263,ENEL RJ,PERDAS DESVIO,1.1830454,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+264,ENEL SP,PERDAS DESVIO,1.130712,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+265,ENERGISA MS,PERDAS DESVIO,1.0185043,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+266,ENERGISA MT,PERDAS DESVIO,1.0564516,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+267,ENERGISA PB,PERDAS DESVIO,1.0564263,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+268,ENERGISA RO,PERDAS DESVIO,1.2058957,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+269,ENERGISA SE,PERDAS DESVIO,1.0056872,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+270,ENERGISA SS,PERDAS DESVIO,0.9702823,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+271,ENERGISA TO,PERDAS DESVIO,0.90366644,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+272,EQTL ALAGOAS,PERDAS DESVIO,,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+273,EQTL MARANHÃO,PERDAS DESVIO,,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+274,EQTL PARÁ,PERDAS DESVIO,,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+275,EQTL PIAUÍ,PERDAS DESVIO,,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+276,LIGHT,PERDAS DESVIO,1.35,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+277,NEOENERGIA BRASÍLIA,PERDAS DESVIO,,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+278,RGE,PERDAS DESVIO,1.0577343,0.0,0.0,Gestão Operacional,10,2.5,0,0,1,menor melhor
+653,AMAZONAS ENERGIA,PERDAS REFERENCIAL,,0.0,1.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+654,CEEE,PERDAS REFERENCIAL,9.26,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+655,CELESC,PERDAS REFERENCIAL,7.42,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+656,CELPE,PERDAS REFERENCIAL,16.1,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+657,CEMIG,PERDAS REFERENCIAL,11.43,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+658,COELBA,PERDAS REFERENCIAL,14.35,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+659,COPEL,PERDAS REFERENCIAL,8.42,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+660,COSERN,PERDAS REFERENCIAL,10.77,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+661,CPFL PAULISTA,PERDAS REFERENCIAL,8.38,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+662,CPFL PIRATININGA,PERDAS REFERENCIAL,6.56,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+663,EDP ES,PERDAS REFERENCIAL,11.56,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+664,EDP SP,PERDAS REFERENCIAL,7.19,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+665,ELEKTRO,PERDAS REFERENCIAL,8.11,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+666,ENEL CE,PERDAS REFERENCIAL,13.52,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+667,ENEL GO,PERDAS REFERENCIAL,11.85,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+668,ENEL RJ,PERDAS REFERENCIAL,18.52,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+669,ENEL SP,PERDAS REFERENCIAL,9.41,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+670,ENERGISA MS,PERDAS REFERENCIAL,12.97,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+671,ENERGISA MT,PERDAS REFERENCIAL,13.64,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+672,ENERGISA PB,PERDAS REFERENCIAL,12.76,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+673,ENERGISA RO,PERDAS REFERENCIAL,22.05,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+674,ENERGISA SE,PERDAS REFERENCIAL,10.55,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+675,ENERGISA SS,PERDAS REFERENCIAL,6.73,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+676,ENERGISA TO,PERDAS REFERENCIAL,13.91,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+677,EQTL ALAGOAS,PERDAS REFERENCIAL,,0.0,1.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+678,EQTL MARANHÃO,PERDAS REFERENCIAL,,0.0,1.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+679,EQTL PARÁ,PERDAS REFERENCIAL,,0.0,1.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+680,EQTL PIAUÍ,PERDAS REFERENCIAL,,0.0,1.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+681,LIGHT,PERDAS REFERENCIAL,19.2,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+682,NEOENERGIA BRASÍLIA,PERDAS REFERENCIAL,,0.0,1.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+683,RGE,PERDAS REFERENCIAL,9.18,0.0,0.0,Gestão Operacional,0,0.0,1,1,0,maior melhor
+436,AMAZONAS ENERGIA,PSP,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+437,CEEE,PSP,96.79,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+438,CELESC,PSP,96.88,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+439,CELPE,PSP,97.81,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+440,CEMIG,PSP,98.94,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+441,COELBA,PSP,96.13,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+442,COPEL,PSP,99.07,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+443,COSERN,PSP,97.01,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+444,CPFL PAULISTA,PSP,99.3,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+445,CPFL PIRATININGA,PSP,99.58,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+446,EDP ES,PSP,96.64,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+447,EDP SP,PSP,97.3,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+448,ELEKTRO,PSP,95.69,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+449,ENEL CE,PSP,88.72,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+450,ENEL GO,PSP,98.76,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+451,ENEL RJ,PSP,96.69,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+452,ENEL SP,PSP,97.76,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+453,ENERGISA MS,PSP,96.42,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+454,ENERGISA MT,PSP,93.74,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+455,ENERGISA PB,PSP,90.46,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+456,ENERGISA RO,PSP,88.66,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+457,ENERGISA SE,PSP,90.62,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+458,ENERGISA SS,PSP,98.15,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+459,ENERGISA TO,PSP,96.24,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+460,EQTL ALAGOAS,PSP,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+461,EQTL MARANHÃO,PSP,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+462,EQTL PARÁ,PSP,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+463,EQTL PIAUÍ,PSP,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+464,LIGHT,PSP,98.86,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+465,NEOENERGIA BRASÍLIA,PSP,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+466,RGE,PSP,99.42,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,maior melhor
+467,AMAZONAS ENERGIA,RELATORIO GESTAO,,0.0,1.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+468,CEEE,RELATORIO GESTAO,7.1,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+469,CELESC,RELATORIO GESTAO,8.0,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+470,CELPE,RELATORIO GESTAO,9.5,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+471,CEMIG,RELATORIO GESTAO,7.2,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+472,COELBA,RELATORIO GESTAO,9.5,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+473,COPEL,RELATORIO GESTAO,9.9,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+474,COSERN,RELATORIO GESTAO,9.5,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+475,CPFL PAULISTA,RELATORIO GESTAO,8.0,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+476,CPFL PIRATININGA,RELATORIO GESTAO,8.3,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+477,EDP ES,RELATORIO GESTAO,8.9,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+478,EDP SP,RELATORIO GESTAO,9.1,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+479,ELEKTRO,RELATORIO GESTAO,10.0,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+480,ENEL CE,RELATORIO GESTAO,8.1,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+481,ENEL GO,RELATORIO GESTAO,8.1,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+482,ENEL RJ,RELATORIO GESTAO,8.4,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+483,ENEL SP,RELATORIO GESTAO,8.8,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+484,ENERGISA MS,RELATORIO GESTAO,9.0,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+485,ENERGISA MT,RELATORIO GESTAO,7.8,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+486,ENERGISA PB,RELATORIO GESTAO,9.3,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+487,ENERGISA RO,RELATORIO GESTAO,7.3,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+488,ENERGISA SE,RELATORIO GESTAO,9.1,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+489,ENERGISA SS,RELATORIO GESTAO,8.7,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+490,ENERGISA TO,RELATORIO GESTAO,7.8,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+491,EQTL ALAGOAS,RELATORIO GESTAO,,0.0,1.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+492,EQTL MARANHÃO,RELATORIO GESTAO,,0.0,1.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+493,EQTL PARÁ,RELATORIO GESTAO,,0.0,1.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+494,EQTL PIAUÍ,RELATORIO GESTAO,,0.0,1.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+495,LIGHT,RELATORIO GESTAO,,0.0,1.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+496,NEOENERGIA BRASÍLIA,RELATORIO GESTAO,,0.0,1.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+497,RGE,RELATORIO GESTAO,8.0,0.0,0.0,Qualidade de Gestão,100,15.0,0,0,0,maior melhor
+93,AMAZONAS ENERGIA,REMUN CRITERIO SETORIAL,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+94,CEEE,REMUN CRITERIO SETORIAL,-37.202545,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+95,CELESC,REMUN CRITERIO SETORIAL,11.32107,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+96,CELPE,REMUN CRITERIO SETORIAL,5.92503,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+97,CEMIG,REMUN CRITERIO SETORIAL,14.01791,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+98,COELBA,REMUN CRITERIO SETORIAL,13.907692,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+99,COPEL,REMUN CRITERIO SETORIAL,23.256792,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+100,COSERN,REMUN CRITERIO SETORIAL,16.899374,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+101,CPFL PAULISTA,REMUN CRITERIO SETORIAL,18.95799,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+102,CPFL PIRATININGA,REMUN CRITERIO SETORIAL,16.749601,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+103,EDP ES,REMUN CRITERIO SETORIAL,10.117579,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+104,EDP SP,REMUN CRITERIO SETORIAL,13.49,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+105,ELEKTRO,REMUN CRITERIO SETORIAL,16.266218,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+106,ENEL CE,REMUN CRITERIO SETORIAL,4.972735,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+107,ENEL GO,REMUN CRITERIO SETORIAL,5.4147515,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+108,ENEL RJ,REMUN CRITERIO SETORIAL,-0.13242215,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+109,ENEL SP,REMUN CRITERIO SETORIAL,15.725971,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+110,ENERGISA MS,REMUN CRITERIO SETORIAL,23.759447,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+111,ENERGISA MT,REMUN CRITERIO SETORIAL,17.039434,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+112,ENERGISA PB,REMUN CRITERIO SETORIAL,24.761368,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+113,ENERGISA RO,REMUN CRITERIO SETORIAL,-1.4394857,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+114,ENERGISA SE,REMUN CRITERIO SETORIAL,22.383242,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+115,ENERGISA SS,REMUN CRITERIO SETORIAL,24.099594,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+116,ENERGISA TO,REMUN CRITERIO SETORIAL,36.84532,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+117,EQTL ALAGOAS,REMUN CRITERIO SETORIAL,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+118,EQTL MARANHÃO,REMUN CRITERIO SETORIAL,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+119,EQTL PARÁ,REMUN CRITERIO SETORIAL,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+120,EQTL PIAUÍ,REMUN CRITERIO SETORIAL,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+121,LIGHT,REMUN CRITERIO SETORIAL,1.2474664,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+122,NEOENERGIA BRASÍLIA,REMUN CRITERIO SETORIAL,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+123,RGE,REMUN CRITERIO SETORIAL,12.483137,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+124,AMAZONAS ENERGIA,RESULTADO OPERACIONAL,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+125,CEEE,RESULTADO OPERACIONAL,,1.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+126,CELESC,RESULTADO OPERACIONAL,37.273308,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+127,CELPE,RESULTADO OPERACIONAL,39.320988,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+128,CEMIG,RESULTADO OPERACIONAL,39.342915,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+129,COELBA,RESULTADO OPERACIONAL,57.853172,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+130,COPEL,RESULTADO OPERACIONAL,66.96299,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+131,COSERN,RESULTADO OPERACIONAL,61.953728,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+132,CPFL PAULISTA,RESULTADO OPERACIONAL,56.819508,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+133,CPFL PIRATININGA,RESULTADO OPERACIONAL,58.581318,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+134,EDP ES,RESULTADO OPERACIONAL,45.93532,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+135,EDP SP,RESULTADO OPERACIONAL,48.89,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+136,ELEKTRO,RESULTADO OPERACIONAL,55.98389,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+137,ENEL CE,RESULTADO OPERACIONAL,32.383785,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+138,ENEL GO,RESULTADO OPERACIONAL,31.978546,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+139,ENEL RJ,RESULTADO OPERACIONAL,22.893473,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+140,ENEL SP,RESULTADO OPERACIONAL,51.135952,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+141,ENERGISA MS,RESULTADO OPERACIONAL,54.924065,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+142,ENERGISA MT,RESULTADO OPERACIONAL,59.50298,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+143,ENERGISA PB,RESULTADO OPERACIONAL,59.51873,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+144,ENERGISA RO,RESULTADO OPERACIONAL,13.985341,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+145,ENERGISA SE,RESULTADO OPERACIONAL,58.743515,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+146,ENERGISA SS,RESULTADO OPERACIONAL,55.98719,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+147,ENERGISA TO,RESULTADO OPERACIONAL,55.179207,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+148,EQTL ALAGOAS,RESULTADO OPERACIONAL,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+149,EQTL MARANHÃO,RESULTADO OPERACIONAL,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+150,EQTL PARÁ,RESULTADO OPERACIONAL,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+151,EQTL PIAUÍ,RESULTADO OPERACIONAL,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+152,LIGHT,RESULTADO OPERACIONAL,37.993633,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+153,NEOENERGIA BRASÍLIA,RESULTADO OPERACIONAL,,0.0,1.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+154,RGE,RESULTADO OPERACIONAL,56.718597,0.0,0.0,Gestão Econômica Financeira,20,5.0,0,0,0,maior melhor
+591,AMAZONAS ENERGIA,TF POPULACAO,,0.0,1.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+592,CEEE,TF POPULACAO,1.81,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+593,CELESC,TF POPULACAO,2.07,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+594,CELPE,TF POPULACAO,4.15,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+595,CEMIG,TF POPULACAO,3.27,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+596,COELBA,TF POPULACAO,3.68,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+597,COPEL,TF POPULACAO,3.05,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+598,COSERN,TF POPULACAO,2.26,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+599,CPFL PAULISTA,TF POPULACAO,3.18,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+600,CPFL PIRATININGA,TF POPULACAO,2.29,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+601,EDP ES,TF POPULACAO,4.57,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+602,EDP SP,TF POPULACAO,2.13,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+603,ELEKTRO,TF POPULACAO,1.79,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+604,ENEL CE,TF POPULACAO,10.34,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+605,ENEL GO,TF POPULACAO,4.64,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+606,ENEL RJ,TF POPULACAO,10.33,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+607,ENEL SP,TF POPULACAO,4.75,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+608,ENERGISA MS,TF POPULACAO,4.42,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+609,ENERGISA MT,TF POPULACAO,4.82,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+610,ENERGISA PB,TF POPULACAO,4.26,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+611,ENERGISA RO,TF POPULACAO,3.34,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+612,ENERGISA SE,TF POPULACAO,2.41,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+613,ENERGISA SS,TF POPULACAO,1.48,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+614,ENERGISA TO,TF POPULACAO,6.85,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+615,EQTL ALAGOAS,TF POPULACAO,,0.0,1.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+616,EQTL MARANHÃO,TF POPULACAO,,0.0,1.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+617,EQTL PARÁ,TF POPULACAO,,0.0,1.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+618,EQTL PIAUÍ,TF POPULACAO,,0.0,1.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+619,LIGHT,TF POPULACAO,0.81,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+620,NEOENERGIA BRASÍLIA,TF POPULACAO,,0.0,1.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+621,RGE,TF POPULACAO,3.5,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+312,AMAZONAS ENERGIA,TF PROPRIO,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+313,CEEE,TF PROPRIO,4.32,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+314,CELESC,TF PROPRIO,8.89,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+315,CELPE,TF PROPRIO,4.32,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+316,CEMIG,TF PROPRIO,5.06,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+317,COELBA,TF PROPRIO,3.15,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+318,COPEL,TF PROPRIO,5.32,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+319,COSERN,TF PROPRIO,2.24,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+320,CPFL PAULISTA,TF PROPRIO,8.54,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+321,CPFL PIRATININGA,TF PROPRIO,6.74,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+322,EDP ES,TF PROPRIO,7.57,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+323,EDP SP,TF PROPRIO,2.18,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+324,ELEKTRO,TF PROPRIO,3.42,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+325,ENEL CE,TF PROPRIO,5.52,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+326,ENEL GO,TF PROPRIO,5.19,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+327,ENEL RJ,TF PROPRIO,15.64,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+328,ENEL SP,TF PROPRIO,3.36,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+329,ENERGISA MS,TF PROPRIO,13.75,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+330,ENERGISA MT,TF PROPRIO,3.78,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+331,ENERGISA PB,TF PROPRIO,4.45,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+332,ENERGISA RO,TF PROPRIO,8.64,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+333,ENERGISA SE,TF PROPRIO,6.33,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+334,ENERGISA SS,TF PROPRIO,6.6,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+335,ENERGISA TO,TF PROPRIO,6.72,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+336,EQTL ALAGOAS,TF PROPRIO,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+337,EQTL MARANHÃO,TF PROPRIO,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+338,EQTL PARÁ,TF PROPRIO,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+339,EQTL PIAUÍ,TF PROPRIO,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+340,LIGHT,TF PROPRIO,6.66,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+341,NEOENERGIA BRASÍLIA,TF PROPRIO,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+342,RGE,TF PROPRIO,3.68,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+560,AMAZONAS ENERGIA,TG POPULACAO,,0.0,1.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+561,CEEE,TG POPULACAO,3759.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+562,CELESC,TG POPULACAO,3309.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+563,CELPE,TG POPULACAO,11768.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+564,CEMIG,TG POPULACAO,7712.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+565,COELBA,TG POPULACAO,10299.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+566,COPEL,TG POPULACAO,5961.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+567,COSERN,TG POPULACAO,2688.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+568,CPFL PAULISTA,TG POPULACAO,7422.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+569,CPFL PIRATININGA,TG POPULACAO,2546.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+570,EDP ES,TG POPULACAO,14856.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+571,EDP SP,TG POPULACAO,5335.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+572,ELEKTRO,TG POPULACAO,6264.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+573,ENEL CE,TG POPULACAO,12953.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+574,ENEL GO,TG POPULACAO,10824.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+575,ENEL RJ,TG POPULACAO,25508.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+576,ENEL SP,TG POPULACAO,7488.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+577,ENERGISA MS,TG POPULACAO,8293.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+578,ENERGISA MT,TG POPULACAO,18008.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+579,ENERGISA PB,TG POPULACAO,16178.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+580,ENERGISA RO,TG POPULACAO,7793.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+581,ENERGISA SE,TG POPULACAO,9145.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+582,ENERGISA SS,TG POPULACAO,6168.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+583,ENERGISA TO,TG POPULACAO,27387.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+584,EQTL ALAGOAS,TG POPULACAO,,0.0,1.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+585,EQTL MARANHÃO,TG POPULACAO,,0.0,1.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+586,EQTL PARÁ,TG POPULACAO,,0.0,1.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+587,EQTL PIAUÍ,TG POPULACAO,,0.0,1.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+588,LIGHT,TG POPULACAO,2883.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+589,NEOENERGIA BRASÍLIA,TG POPULACAO,,0.0,1.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+590,RGE,TG POPULACAO,11005.0,0.0,0.0,Responsabilidade Socioambiental,5,0.5,0,0,0,menor melhor
+281,AMAZONAS ENERGIA,TG PROPRIO,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+282,CEEE,TG PROPRIO,1585.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+283,CELESC,TG PROPRIO,911.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+284,CELPE,TG PROPRIO,382.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+285,CEMIG,TG PROPRIO,507.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+286,COELBA,TG PROPRIO,15.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+287,COPEL,TG PROPRIO,1256.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+288,COSERN,TG PROPRIO,5.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+289,CPFL PAULISTA,TG PROPRIO,954.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+290,CPFL PIRATININGA,TG PROPRIO,1059.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+291,EDP ES,TG PROPRIO,1501.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+292,EDP SP,TG PROPRIO,3.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+293,ELEKTRO,TG PROPRIO,1388.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+294,ENEL CE,TG PROPRIO,963.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+295,ENEL GO,TG PROPRIO,1199.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+296,ENEL RJ,TG PROPRIO,328.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+297,ENEL SP,TG PROPRIO,38.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+298,ENERGISA MS,TG PROPRIO,70.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+299,ENERGISA MT,TG PROPRIO,1358.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+300,ENERGISA PB,TG PROPRIO,26.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+301,ENERGISA RO,TG PROPRIO,1604.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+302,ENERGISA SE,TG PROPRIO,3.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+303,ENERGISA SS,TG PROPRIO,1874.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+304,ENERGISA TO,TG PROPRIO,22.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+305,EQTL ALAGOAS,TG PROPRIO,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+306,EQTL MARANHÃO,TG PROPRIO,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+307,EQTL PARÁ,TG PROPRIO,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+308,EQTL PIAUÍ,TG PROPRIO,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+309,LIGHT,TG PROPRIO,85.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+310,NEOENERGIA BRASÍLIA,TG PROPRIO,,0.0,1.0,Gestão Operacional,10,2.5,0,0,0,menor melhor
+311,RGE,TG PROPRIO,379.0,0.0,0.0,Gestão Operacional,10,2.5,0,0,0,menor melhor

@@ -1,0 +1,11 @@
+pts,improve,qtd_vizinhos_validos,tempo_execucao
+924.95,True,9,3.3
+928.2,True,10,3.69
+928.2,False,5,1.96
+933.1,True,6,2.31
+933.1,False,6,2.36
+939.65,True,8,2.97
+939.65,False,3,1.32
+939.65,False,2,1.0
+939.65,False,3,1.31
+939.65,False,2,0.98
