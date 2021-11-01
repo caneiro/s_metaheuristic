@@ -25,6 +25,7 @@ from itertools import combinations
 import copy
 from pathlib import Path
 from tqdm.auto import tqdm
+import ray
 
 
 SEED = 42
@@ -304,9 +305,23 @@ def selection(Nv, s_best, cov_mx, strategy='best', type='min'):
 
     return s_best, obj_best, improve
 
-def local_search(
-    iter, neighs, alpha, exp_return, n_port, k_min, k_max,
-    d_min, d_max, move_strategy, selection_strategy, seed, early_stoping=50, tol=0.000001):
+@ray.remote
+def local_search(params):
+
+    k_min = params[0]
+    k_max = params[1]
+    d_min = params[2]
+    d_max = params[3]
+    iter = params[4]
+    neighs = params[5]
+    alpha = params[6]
+    exp_return = params[7]
+    move_strategy = params[8]
+    selection_strategy = params[9]
+    n_port = params[10]
+    seed = params[11]
+    early_stoping=50
+    tol=0.000001
 
     np.random.seed(seed)
     total_time_start = time.time()
@@ -470,7 +485,7 @@ def local_search(
     log.to_csv(Path(LOG_PATH, filename), index=False)
     total_time_end = time.time()
     total_time = total_time_end - total_time_start
-    # print('>>>>>> Tempo total: {} segundos'.format(round(total_time, 6)))
+    print('Local Search Time: {}'.format(round(total_time, 3)))
 
     return log
 
@@ -535,48 +550,10 @@ def benchmarks():
     ]
 
     parameters = list(itertools.product(*parameters))
+    ray.init(num_cpus=16)
 
-    for param in tqdm(parameters, desc='parameters', leave=False):
-        k_min = param[0]
-        k_max = param[1]
-        d_min = param[2]
-        d_max = param[3]
-        iter = param[4]
-        neighs = param[5]
-        alpha = param[6]
-        exp_return = param[7]
-        move_strategy = param[8]
-        selection_strategy = param[9]
-        portfolio = param[10]
-        seed = param[11]
-
-        # print(
-        #     'k_min', k_min,
-        #     'k_max', k_max,
-        #     'd_min', d_min,
-        #     'd_max', d_max,
-        #     'iter', iter,
-        #     'neighs', neighs,
-        #     'alpha', alpha,
-        #     'exp_return', exp_return,
-        #     'move_strategy', move_strategy,
-        #     'selection_strategy', selection_strategy,
-        #     'portfolio', portfolio,
-        #     'seed', seed
-        # )
-
-        local_search(iter = iter,
-                     neighs = neighs,
-                     alpha = alpha,
-                     exp_return = exp_return,
-                     n_port = portfolio,
-                     k_min = k_min,
-                     k_max = k_max,
-                     d_min = d_min,
-                     d_max = d_max,
-                     move_strategy = move_strategy,
-                     selection_strategy = selection_strategy,
-                     seed = seed)
+    futures = [local_search.remote(param) for param in parameters]
+    logs = ray.get(futures)
 
     end_time = time.time()
     run_time = round(end_time - start_time, 3)
