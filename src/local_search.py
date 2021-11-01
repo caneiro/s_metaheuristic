@@ -13,6 +13,7 @@
 # restricoes de cardinalidade -> kmin e kmax ativos no portfolio
 # restricoes de quantidade (fracao) de cada asset ->  dmin e dmax
 
+import itertools
 import numpy as np
 import pandas as pd
 import time
@@ -519,36 +520,44 @@ def benchmarks():
     l_neighs = [100]
     l_alpha = [0.001, 0.003, 0.01, 0.03]
     l_exp_return = [0.001, 0.002, 0.003, 0.004, 0.005, 0.006, 0.007, 0.008, 0.009, 0.01]
-    # l_exp_return = [0.003]
     l_move_strategy = ['iDR', 'idID', 'TID', 'random', 'best']
     l_selection_strategy = ['best', 'first', 'random']
     l_portfolio = [1] # [1,2,3,4,5]
     l_seeds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-    for d_min in tqdm(l_d_min, desc='d_min'):
-        for d_max in tqdm(l_d_max, desc='d_max'):
-            for k_min in tqdm(l_k_min, desc='k_min'):
-                for k_max in tqdm(l_k_max, desc='k_max'):
-                    for portfolio in tqdm(l_portfolio, desc='portfolio'):
-                        for exp_return in tqdm(l_exp_return, desc='exp_return'):
-                            for iter in tqdm(l_iter, desc='iter'):
-                                for neighs in tqdm(l_neighs, desc='neighs'):
-                                    for alpha in tqdm(l_alpha, desc='alpha'):
-                                        for move_strategy in tqdm(l_move_strategy, desc='move_strategy'):
-                                            for selection_strategy in tqdm(l_selection_strategy, desc='selection_strategy'):
-                                                for seed in tqdm(l_seeds, leave=False, desc='seed'):
-                                                    local_search(iter,
-                                                                 neighs,
-                                                                 alpha,
-                                                                 exp_return,
-                                                                 portfolio,
-                                                                 k_min,
-                                                                 k_max,
-                                                                 d_min,
-                                                                 d_max,
-                                                                 move_strategy,
-                                                                 selection_strategy,
-                                                                 seed)
+    parameters = [
+        l_k_min, l_k_max, l_d_min, l_d_max, l_iter, l_neighs, l_alpha, l_exp_return,
+        l_move_strategy, l_selection_strategy, l_portfolio, l_seeds
+    ]
+
+    parameters = list(itertools.product(*parameters))
+
+    for param in tqdm(parameters, desc='parameters', leave=False):
+        k_min = param[0]
+        k_max = param[1]
+        d_min = param[2]
+        d_max = param[3]
+        iter = param[4]
+        neighs = param[5]
+        alpha = param[6]
+        exp_return = param[7]
+        move_strategy = param[8]
+        selection_strategy = param[9]
+        portfolio = param[10]
+        seed = param[11]
+
+        local_search(iter,
+                     neighs,
+                     alpha,
+                     exp_return,
+                     portfolio,
+                     k_min,
+                     k_max,
+                     d_min,
+                     d_max,
+                     move_strategy,
+                     selection_strategy,
+                     seed)
 
 
 if __name__ == "__main__":
