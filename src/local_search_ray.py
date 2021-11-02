@@ -26,6 +26,7 @@ import copy
 from pathlib import Path
 from tqdm.auto import tqdm
 import ray
+import random
 
 
 SEED = 42
@@ -37,7 +38,8 @@ def normalize(X):
     # normalização para soma de X = 1
     total_X = X.sum()
     fator = 1 / total_X
-    return X * fator
+    
+    return np.round(X * fator, 6)
 
 def initial_solution(n_assets, k=None, k_min=1, k_max=30, d_min=0.01, d_max=0.99):
     """
@@ -438,6 +440,11 @@ def local_search(params):
         l_qNv.append(len(Nv))
         l_iter_time.append(round(iter_time, 6))
 
+        l_X = [list(X) for X in l_X]
+        l_Z = [list(Z) for Z in l_Z]
+
+
+
         if c_early > early_stoping:
             # print('early_stoping', i)
             break
@@ -454,6 +461,7 @@ def local_search(params):
                         len(N),
                         len(Nv)))
 
+    l_qX = [len(X) for X in l_X]
 
     # log 
     log = pd.DataFrame({
@@ -463,8 +471,9 @@ def local_search(params):
         'obj':l_obj,
         'return':l_return,
         'n_assets':l_assets,
-        # 'X':l_X,
-        # 'Z':l_Z,
+        'X':l_X,
+        'Z':l_Z,
+        'qX':l_qX,
         'qN':l_qN,
         'qNv':l_qNv,
         'iter_time':l_iter_time
@@ -482,7 +491,7 @@ def local_search(params):
     timestamp = time.strftime("%Y%m%d_%H%M%S")
     mh = 'local_search'
     filename = 'log_' + mh + '_' + timestamp + '.csv'
-    log.to_csv(Path(LOG_PATH, filename), index=False)
+    log.to_csv(Path(LOG_PATH, filename), index=False, quotechar='"')
     total_time_end = time.time()
     total_time = total_time_end - total_time_start
     print('Local Search Time: {}'.format(round(total_time, 3)))
@@ -531,18 +540,18 @@ def benchmarks():
 
     start_time = time.time()
 
-    l_k_min = [10]
+    l_k_min = [2]
     l_k_max = [10]
     l_d_min = [0.01]
-    l_d_max = [0.99]
+    l_d_max = [1.00]
     l_iter = [1000]
-    l_neighs = [100]
-    l_alpha = [0.001, 0.003, 0.01, 0.03]
-    l_exp_return = [0.003] # [0.001, 0.002, 0.003, 0.004, 0.005, 0.006, 0.007, 0.008, 0.009, 0.01]
+    l_neighs = [1000]
+    l_alpha = [0.1]
+    l_exp_return = [0.001, 0.002, 0.003, 0.004, 0.005, 0.006, 0.007, 0.008, 0.009, 0.01]
     l_move_strategy = ['iDR', 'idID', 'TID', 'random', 'best']
     l_selection_strategy = ['best', 'first', 'random']
     l_portfolio = [1] # [1,2,3,4,5]
-    l_seeds = [SEED] # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    l_seeds = list(range(100))
 
     parameters = [
         l_k_min, l_k_max, l_d_min, l_d_max, l_iter, l_neighs, l_alpha, l_exp_return,
@@ -550,7 +559,10 @@ def benchmarks():
     ]
 
     parameters = list(itertools.product(*parameters))
-    ray.init(num_cpus=16)
+    random.shuffle(parameters)
+    print('Number of parameters combinations: {}'.format(len(parameters)))
+
+    ray.init(num_cpus=32)
 
     futures = [local_search.remote(param) for param in parameters]
     logs = ray.get(futures)
