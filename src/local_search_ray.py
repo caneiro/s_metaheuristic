@@ -29,9 +29,16 @@ from tqdm.auto import tqdm
 import ray
 import random
 
+from functools import partial
+
+DEBUG = False
+
+
+
+
 
 SEED = 42
-DEBUG = False
+
 PATH = Path.cwd()
 LOG_PATH = Path(PATH, "./data/log/")
 
@@ -41,38 +48,6 @@ def normalize(X):
     fator = 1 / total_X
     
     return np.round(X * fator, 6)
-
-def initial_solution(n_assets, k=None, k_min=1, k_max=30, d_min=0.01, d_max=0.99):
-    """
-    Gera a solução inicial de forma aleatória.
-    n_assets <- integer: quantidade de ativos no portfolio.
-    k <- integer: quantidade de ativos na solucao inicial
-    s -> tuple of X e Z
-        X -> array of float: quantidade do ativo (percential)
-        Z -> array of int: 0 ou 1 para indicação do ativo pertence ou nao a solucao
-    """
-    # >>>> as vezes depois da normalizacao um ativo pode ficar abaixo ou acima de dmin e dmax!!!
-    # inicializa vetores
-    X = np.zeros(n_assets)
-    Z = np.zeros(n_assets)
-
-    k_min = min(k_min, n_assets)
-    k_max = min(k_max, n_assets)
-
-    # gera qtd de ativos a serem selecionados
-    if k is None:
-        r = np.random.randint(k_min, k_max+1, 1)[0]
-    else:
-        r = k
-
-    z = np.random.choice(n_assets, r, False)
-    # gera os vetores e ajusta para soma = 1
-    Z[z] = 1
-    X[z] = np.random.uniform(d_min, d_max, r)
-    X = normalize(X)
-    # retorna a solucao inicial S que é uma tupla de X e Z
-    s = [X, Z]
-    return s
 
 def aux_move_random_selections(s, ops=None):
     _, Z = s
@@ -215,7 +190,7 @@ def move_TID(s, alpha, d_min, d_max):
     # X = normalize(X)
     sl = [X, Z]
     return sl
-   
+
 def neighbours(s, i, alpha, move='random', d_min=0.01, d_max=0.99):
     """
     s <- solucao atual
@@ -308,7 +283,50 @@ def selection(Nv, s_best, cov_mx, strategy='best', type='min'):
 
     return s_best, obj_best, improve
 
-@ray.remote
+def initial_solution(n_assets, k, k_min, k_max, d_min, d_max, alpha, exp_return, r_mean, cov_mx):
+    """
+    Gera a solução inicial de forma aleatória.
+    n_assets <- integer: quantidade de ativos no portfolio.
+    k <- integer: quantidade de ativos na solucao inicial
+    s -> tuple of X e Z
+        X -> array of float: quantidade do ativo (percential)
+        Z -> array of int: 0 ou 1 para indicação do ativo pertence ou nao a solucao
+    """
+    # >>>> as vezes depois da normalizacao um ativo pode ficar abaixo ou acima de dmin e dmax!!!
+    # inicializa vetores
+    X = np.zeros(n_assets)
+    Z = np.zeros(n_assets)
+
+    k_min = min(k_min, n_assets)
+    k_max = min(k_max, n_assets)
+
+    # gera qtd de ativos a serem selecionados
+    if k is None:
+        r = np.random.randint(k_min, k_max+1, 1)[0]
+    else:
+        r = k
+
+    z = np.random.choice(n_assets, r, False)
+    # gera os vetores e ajusta para soma = 1
+    Z[z] = 1
+    X[z] = np.random.uniform(d_min, d_max, r)
+    X = normalize(X)
+    # retorna a solucao inicial S que é uma tupla de X e Z
+    s0 = [X, Z]
+    # sum_X = X.sum()
+    # sum_Z = Z.sum()
+    # X_selected = X[np.where(Z==1)]
+
+    Ns = neighbours(s0.copy(), 10000, alpha, 'random', d_min, d_max)
+    Nsv = validation(Ns, exp_return, r_mean, k_min, k_max, d_min, d_max)
+    if len(Nsv)>=1:
+        sl, _, _ = selection(Nsv, s0.copy(), cov_mx, 'best', 'min')
+        return sl
+    else:
+        print('>>> Bad Initial Solution | k_min: {} | k_max {} | d_min {} | d_max {} | alpha {} | exp_retur {}'\
+            .format(k_min, k_max, d_min, d_max, alpha, exp_return))
+        return None
+
 def local_search(params):
 
     k_min = params[0]
@@ -324,6 +342,7 @@ def local_search(params):
     n_port = params[10]
     seed = params[11]
     tag = params[12]
+    k = params[13]
     early_stoping=50
     tol=0.000001
 
@@ -337,220 +356,220 @@ def local_search(params):
     n_assets, r_mean, r_std, cov_mx = portfolio
     
     # dados da solucao ininial aleatoria
-    s0 = initial_solution(n_assets, None, k_min, k_max, d_min, d_max)
+    s0 = initial_solution(n_assets, k, k_min, k_max, d_min, d_max, alpha, exp_return, r_mean, cov_mx)
+    if s0 is not None:
     
-    # obj_s0 = cost_function(s0, cov_mx)
-    # return_s0 = portfolio_return(s0, r_mean)
-    
-    # print('Solucao Inicial | obj: {} | return: {} | assets: {} | X:{}'\
-    #     .format(round(obj_s0, 6),
-    #             round(return_s0, 6),
-    #             s0[1].sum(),
-    #             s0[0].sum()))
+        # listas para armazenar dados das iteracoes
+        l_move = []
+        l_improve = []
+        l_obj = []
+        l_return = []
+        l_assets = []
+        l_X = []
+        l_Z = []
+        l_qN = []
+        l_qNv = []
+        l_iter_time = []
+        l_iter = []
 
-    # listas para armazenar dados das iteracoes
-    l_move = []
-    l_improve = []
-    l_obj = []
-    l_return = []
-    l_assets = []
-    l_X = []
-    l_Z = []
-    l_qN = []
-    l_qNv = []
-    l_iter_time = []
-    l_iter = []
+        # contador para realizar o early stoping
+        c_early = 0
+        
+        # copia solucao inicial para a solucao
+        s_best = s0.copy()
+        obj_best = cost_function(s0, cov_mx)
+        
+        # tipos de operadores a serem utilizados
+        moves = ['iDR', 'idID', 'TID']
 
-    # contador para realizar o early stoping
-    c_early = 0
-    
-    # copia solucao inicial para a solucao
-    s_best = s0.copy()
-    obj_best = cost_function(s0, cov_mx)
-    
-    # tipos de operadores a serem utilizados
-    moves = ['iDR', 'idID', 'TID']
+        for i in range(iter):
+            l_iter.append(i)
+            iter_time_start = time.time()
 
-    for i in range(iter):
-        l_iter.append(i)
-        iter_time_start = time.time()
+            if move_strategy == 'best':
+                s_move = []
+                obj_move = []
 
-        if move_strategy == 'best':
-            s_move = []
-            obj_move = []
+                for move in moves:
+                    N = neighbours(s_best, neighs, alpha, move, d_min, d_max)
+                    Nv = validation(N, exp_return, r_mean, k_min, k_max, d_min, d_max)
+                    if len(Nv) > 0:
+                        s_select, obj_select, improve = selection(Nv, s_best.copy(), cov_mx, selection_strategy)
+                        s_move.append(s_select)
+                        obj_move.append(obj_select)
 
-            for move in moves:
+                if len(s_move) >= 1:
+                    obj_move = np.array(obj_move)
+                    min_obj_move = np.argsort(obj_move)[0]
+                    sl = s_move[min_obj_move]
+                    obj_l = obj_move[min_obj_move]
+                    move = moves[min_obj_move]
+                else:
+                    obj_l = obj_best
+                    sl = s_best.copy()
+                    improve = False                
+
+            else:
+                if move_strategy == 'random':
+                    move = np.random.choice(moves)
+
+                elif move_strategy in moves:
+                    move = move_strategy
+
                 N = neighbours(s_best, neighs, alpha, move, d_min, d_max)
                 Nv = validation(N, exp_return, r_mean, k_min, k_max, d_min, d_max)
                 if len(Nv) > 0:
-                    s_select, obj_select, improve = selection(Nv, s_best.copy(), cov_mx, selection_strategy)
-                    s_move.append(s_select)
-                    obj_move.append(obj_select)
+                    sl, obj_l, improve = selection(Nv, s_best.copy(), cov_mx, selection_strategy)
+                else:
+                    obj_l = obj_best
+                    sl = s_best.copy()
+                    improve = False
 
-            if len(s_move) >= 1:
-                obj_move = np.array(obj_move)
-                min_obj_move = np.argsort(obj_move)[0]
-                sl = s_move[min_obj_move]
-                obj_l = obj_move[min_obj_move]
-                move = moves[min_obj_move]
+            variation = abs((obj_l / obj_best)-1)
+            if  variation <= tol:
+                c_early = c_early+1
             else:
-                obj_l = obj_best
-                sl = s_best.copy()
-                improve = False                
+                c_early = 0
 
-        else:
-            if move_strategy == 'random':
-                move = np.random.choice(moves)
+            if obj_l < obj_best:
+                obj_best = obj_l
+                s_best = sl.copy()
 
-            elif move_strategy in moves:
-                move = move_strategy
+            return_best = portfolio_return(s_best, r_mean)
+            z_best = np.where(s_best[1]==1)[0]
+            x_best = s_best[0][z_best]
 
-            N = neighbours(s_best, neighs, alpha, move, d_min, d_max)
-            Nv = validation(N, exp_return, r_mean, k_min, k_max, d_min, d_max)
-            if len(Nv) > 0:
-                sl, obj_l, improve = selection(Nv, s_best.copy(), cov_mx, selection_strategy)
-            else:
-                obj_l = obj_best
-                sl = s_best.copy()
-                improve = False
+            iter_time_end = time.time()
+            iter_time = round(iter_time_end - iter_time_start, 6)
 
-        variation = abs((obj_l / obj_best)-1)
-        if  variation <= tol:
-            c_early = c_early+1
-        else:
-            c_early = 0
+            l_move.append(move)
+            l_improve.append(improve)
+            l_obj.append(obj_best)
+            l_return.append(return_best)
+            l_assets.append(x_best.shape[0])
+            l_X.append(x_best)
+            l_Z.append(z_best)
+            l_qN.append(len(N))
+            l_qNv.append(len(Nv))
+            l_iter_time.append(round(iter_time, 6))
 
-        if obj_l < obj_best:
-            obj_best = obj_l
-            s_best = sl.copy()
-
-        return_best = portfolio_return(s_best, r_mean)
-        z_best = np.where(s_best[1]==1)[0]
-        x_best = s_best[0][z_best]
-
-        iter_time_end = time.time()
-        iter_time = round(iter_time_end - iter_time_start, 6)
-
-        l_move.append(move)
-        l_improve.append(improve)
-        l_obj.append(obj_best)
-        l_return.append(return_best)
-        l_assets.append(x_best.shape[0])
-        l_X.append(x_best)
-        l_Z.append(z_best)
-        l_qN.append(len(N))
-        l_qNv.append(len(Nv))
-        l_iter_time.append(round(iter_time, 6))
-
-        l_X = [list(X) for X in l_X]
-        l_Z = [list(Z) for Z in l_Z]
+            l_X = [list(X) for X in l_X]
+            l_Z = [list(Z) for Z in l_Z]
 
 
 
-        if c_early > early_stoping:
-            # print('early_stoping', i)
-            break
-        
-        if DEBUG:
-            print('iter {} | time: {} | move: {} | best: {} | return: {} | assets: {} | X: {} | qN: {} | qNv: {}' \
-                .format(i,
-                        iter_time,
-                        move,
-                        round(obj_best, 6),
-                        round(return_best, 6),
-                        x_best.shape[0],
-                        round(s_best[0].sum(), 2),
-                        len(N),
-                        len(Nv)))
+            if c_early > early_stoping:
+                # print('early_stoping', i)
+                break
+            
+            if DEBUG:
+                print('iter {} | time: {} | move: {} | best: {} | return: {} | assets: {} | X: {} | qN: {} | qNv: {}' \
+                    .format(i,
+                            iter_time,
+                            move,
+                            round(obj_best, 6),
+                            round(return_best, 6),
+                            x_best.shape[0],
+                            round(s_best[0].sum(), 2),
+                            len(N),
+                            len(Nv)))
 
-    l_qX = [len(X) for X in l_X]
+        l_qX = [len(X) for X in l_X]
 
-    # log 
-    log = pd.DataFrame({
-        'iter':l_iter,
-        'move':l_move,
-        'improve':l_improve,
-        'obj':l_obj,
-        'return':l_return,
-        'n_assets':l_assets,
-        'X':l_X,
-        'Z':l_Z,
-        'qX':l_qX,
-        'qN':l_qN,
-        'qNv':l_qNv,
-        'iter_time':l_iter_time
-    })
-    log['max_iter'] = iter
-    log['neighbours'] = neighs
-    log['alpha'] = alpha
-    log['exp_return'] = exp_return
-    log['n_port'] = n_port
-    log['k_min'] = k_min
-    log['k_max'] = k_max
-    log['move_strategy'] = move_strategy
-    log['seed'] = seed
-    log['selection_strategy'] = selection_strategy
-    log['tag'] = tag
-    log_cols = [c for c in log.columns if c not in ['X', 'Z']] + ['X', 'Z']
-    log = log[log_cols]
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-    mh = 'local_search'
-    filename = 'log_' + mh + '_' + timestamp + '.csv'
-    log.to_csv(Path(LOG_PATH, filename), index=False, quotechar='"')
-    total_time_end = time.time()
-    total_time = total_time_end - total_time_start
-    print('Local Search Time: {}'.format(round(total_time, 3)))
+        # log 
+        log = pd.DataFrame({
+            'iter':l_iter,
+            'move':l_move,
+            'improve':l_improve,
+            'obj':l_obj,
+            'return':l_return,
+            'n_assets':l_assets,
+            'X':l_X,
+            'Z':l_Z,
+            'qX':l_qX,
+            'qN':l_qN,
+            'qNv':l_qNv,
+            'iter_time':l_iter_time
+        })
+        log['max_iter'] = iter
+        log['neighbours'] = neighs
+        log['alpha'] = alpha
+        log['exp_return'] = exp_return
+        log['n_port'] = n_port
+        log['k_min'] = k_min
+        log['k_max'] = k_max
+        log['move_strategy'] = move_strategy
+        log['seed'] = seed
+        log['selection_strategy'] = selection_strategy
+        log['tag'] = tag
+        log_cols = [c for c in log.columns if c not in ['X', 'Z']] + ['X', 'Z']
+        log = log[log_cols]
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+        mh = 'local_search'
+        filename = 'log_' + mh + '_' + timestamp + '.csv'
+        log.to_csv(Path(LOG_PATH, filename), index=False, quotechar='"')
+        total_time_end = time.time()
+        total_time = total_time_end - total_time_start
+        print('Local Search Time: {}'.format(round(total_time, 3)))
 
-    return log
+        return log
+
+    else:
+        return None
+
+@ray.remote
+def ray_local_search(params):
+    return local_search(params)
 
 def debug():
+    global DEBUG
+    DEBUG = True
     # restricoes de cardinalidade
-    k_min = 10 # quantidade minima de ativos na solucao
-    k_max = 10
+    k_min = 2 # quantidade minima de ativos na solucao
+    k_max = 15
+    k=7
 
     # restricoes de quantidade
     d_min = 0.01 # valor minimo de quantidade do ativo (percentual)
-    d_max = 0.99 # valor maximo de quantidade do ativo (percentual)
+    d_max = 1.00 # valor maximo de quantidade do ativo (percentual)
 
     # parametros
     iter = 1000 # iteracoes de busca local
-    neighs = 1000 # neighbours
-    alpha = 0.01 # 'step' -> quantidade de perturbacao para geracao da vizinhanca
-    exp_return = 0.003 #
+    neighs = 100 # neighbours
+    alpha = 0.1 # 'step' -> quantidade de perturbacao para geracao da vizinhanca
+    exp_return = 0.0025 #
 
     portfolio = 1
     move_strategy = 'best'
     selection_strategy = 'best'
-    seed = SEED
+    seed = None
 
-    log = local_search(iter,
-                       neighs,
-                       alpha,
-                       exp_return,
-                       portfolio,
-                       k_min,
-                       k_max,
-                       d_min,
-                       d_max,
-                       move_strategy,
-                       selection_strategy,
-                       seed)
+    tag = 'ccef'
 
-    log.to_csv('log.csv')
+    parameters = [
+        k_min, k_max, d_min, d_max, iter, neighs, alpha, exp_return,
+        move_strategy, selection_strategy, portfolio, seed, tag, k
+    ]
+
+    log = local_search(parameters)
+    # log.to_csv('log.csv')
 
     return log
     # ['iDR', 'idID', 'TID']
 
 def benchmarks():
+    
+    global DEBUG
+    DEBUG = False
 
     start_time = time.time()
-
+    l_k = [7]
     l_k_min = [2]
     l_k_max = [15]
     l_d_min = [0.01]
     l_d_max = [1.00]
     l_iter = [1000]
-    l_neighs = [1000]
+    l_neighs = [100]
     l_alpha = [0.1]
     l_exp_return = [
         0.0010, 0.0015, 0.0020, 0.0025, 0.0030, 0.0035, 0.0040, 0.0045, 0.0050,
@@ -566,7 +585,7 @@ def benchmarks():
 
     parameters = [
         l_k_min, l_k_max, l_d_min, l_d_max, l_iter, l_neighs, l_alpha, l_exp_return,
-        l_move_strategy, l_selection_strategy, l_portfolio, l_seeds, tag
+        l_move_strategy, l_selection_strategy, l_portfolio, l_seeds, tag, l_k
     ]
 
     parameters = list(itertools.product(*parameters))
@@ -575,7 +594,7 @@ def benchmarks():
 
     ray.init(num_cpus=32)
 
-    futures = [local_search.remote(param) for param in parameters]
+    futures = [ray_local_search.remote(param) for param in parameters]
     logs = ray.get(futures)
 
     end_time = time.time()
@@ -585,4 +604,6 @@ def benchmarks():
 
 if __name__ == "__main__":
     benchmarks()
-    # debug()
+
+    # for d in range(100):
+    #     debug()
