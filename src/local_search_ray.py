@@ -17,6 +17,7 @@ import itertools
 import numpy as np
 import pandas as pd
 import time
+from datetime import datetime
 
 np.set_printoptions(linewidth=100000)
 
@@ -322,6 +323,7 @@ def local_search(params):
     selection_strategy = params[9]
     n_port = params[10]
     seed = params[11]
+    tag = params[12]
     early_stoping=50
     tol=0.000001
 
@@ -488,7 +490,10 @@ def local_search(params):
     log['move_strategy'] = move_strategy
     log['seed'] = seed
     log['selection_strategy'] = selection_strategy
-    timestamp = time.strftime("%Y%m%d_%H%M%S")
+    log['tag'] = tag
+    log_cols = [c for c in log.columns if c not in ['X', 'Z']] + ['X', 'Z']
+    log = log[log_cols]
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
     mh = 'local_search'
     filename = 'log_' + mh + '_' + timestamp + '.csv'
     log.to_csv(Path(LOG_PATH, filename), index=False, quotechar='"')
@@ -508,7 +513,7 @@ def debug():
     d_max = 0.99 # valor maximo de quantidade do ativo (percentual)
 
     # parametros
-    iter = 100 # iteracoes de busca local
+    iter = 1000 # iteracoes de busca local
     neighs = 1000 # neighbours
     alpha = 0.01 # 'step' -> quantidade de perturbacao para geracao da vizinhanca
     exp_return = 0.003 #
@@ -541,21 +546,27 @@ def benchmarks():
     start_time = time.time()
 
     l_k_min = [2]
-    l_k_max = [10]
+    l_k_max = [15]
     l_d_min = [0.01]
     l_d_max = [1.00]
     l_iter = [1000]
     l_neighs = [1000]
     l_alpha = [0.1]
-    l_exp_return = [0.001, 0.002, 0.003, 0.004, 0.005, 0.006, 0.007, 0.008, 0.009, 0.01]
+    l_exp_return = [
+        0.0010, 0.0015, 0.0020, 0.0025, 0.0030, 0.0035, 0.0040, 0.0045, 0.0050,
+        0.0055, 0.0060, 0.0065, 0.0070, 0.0075, 0.0080, 0.0085, 0.0090, 0.0095, 0.01
+    ]
+
     l_move_strategy = ['iDR', 'idID', 'TID', 'random', 'best']
     l_selection_strategy = ['best', 'first', 'random']
     l_portfolio = [1] # [1,2,3,4,5]
-    l_seeds = list(range(100))
+    l_seeds = list(range(10))
+
+    tag = ['ccef']
 
     parameters = [
         l_k_min, l_k_max, l_d_min, l_d_max, l_iter, l_neighs, l_alpha, l_exp_return,
-        l_move_strategy, l_selection_strategy, l_portfolio, l_seeds
+        l_move_strategy, l_selection_strategy, l_portfolio, l_seeds, tag
     ]
 
     parameters = list(itertools.product(*parameters))
