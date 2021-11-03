@@ -32,11 +32,6 @@ import random
 from functools import partial
 
 DEBUG = False
-
-
-
-
-
 SEED = 42
 
 PATH = Path.cwd()
@@ -343,7 +338,7 @@ def local_search(params):
     seed = params[11]
     tag = params[12]
     k = params[13]
-    early_stoping=50
+    early_stoping=10
     tol=0.000001
 
     np.random.seed(seed)
@@ -456,8 +451,6 @@ def local_search(params):
             l_X = [list(X) for X in l_X]
             l_Z = [list(Z) for Z in l_Z]
 
-
-
             if c_early > early_stoping:
                 # print('early_stoping', i)
                 break
@@ -563,12 +556,13 @@ def benchmarks():
     DEBUG = False
 
     start_time = time.time()
+
     l_k = [7]
     l_k_min = [2]
     l_k_max = [15]
     l_d_min = [0.01]
     l_d_max = [1.00]
-    l_iter = [1000]
+    l_iter = [100]
     l_neighs = [100]
     l_alpha = [0.1]
     l_exp_return = [
@@ -576,12 +570,12 @@ def benchmarks():
         0.0055, 0.0060, 0.0065, 0.0070, 0.0075, 0.0080, 0.0085, 0.0090, 0.0095, 0.01
     ]
 
-    l_move_strategy = ['iDR', 'idID', 'TID', 'random', 'best']
+    l_move_strategy = ['random', 'best'] # ['iDR', 'idID', 'TID', 'random', 'best']
     l_selection_strategy = ['best', 'first', 'random']
     l_portfolio = [1] # [1,2,3,4,5]
-    l_seeds = list(range(10))
+    l_seeds = list(range(100))
 
-    tag = ['ccef']
+    tag = ['bench_local']
 
     parameters = [
         l_k_min, l_k_max, l_d_min, l_d_max, l_iter, l_neighs, l_alpha, l_exp_return,
@@ -592,7 +586,7 @@ def benchmarks():
     random.shuffle(parameters)
     print('Number of parameters combinations: {}'.format(len(parameters)))
 
-    ray.init(num_cpus=32)
+    ray.init(num_cpus=16)
 
     futures = [ray_local_search.remote(param) for param in parameters]
     logs = ray.get(futures)
