@@ -235,8 +235,9 @@ def cost_function(s, cov_mx, penalties=None, lambda_=0.001):
 
 def utility_function(Z, costs, penalties):
     z = np.where(Z==1)[0]
-    penalties[z] = penalties[z] + 1
-    utils = np.divide(Z * costs, penalties, out=np.zeros_like(penalties), where=penalties!=0)
+    penalties_ = copy.deepcopy(penalties)
+    penalties_[z] = penalties_[z] + 1
+    utils = np.divide(Z * costs, penalties_, out=np.zeros_like(penalties_), where=penalties_!=0)
     idx = np.argmax(utils)
     return idx
 
@@ -508,7 +509,7 @@ def local_search(
     total_time = total_time_end - total_time_start
     print('Local Search Time: {}'.format(round(total_time, 3)))
 
-    return s_best, obj_best, log
+    return s_best, obj_best, improve, log
 
 @ray.remote
 def ray_local_search(params):
@@ -526,8 +527,8 @@ def guided_local_search():
     k = None
     d_min = 0.01
     d_max = 1.00
-    iter = 1000
-    neighs = 100
+    iter = 100
+    neighs = 1000
     alpha = 0.1
     # lambda_ = 0.001
     exp_return = 0.001
@@ -566,7 +567,7 @@ def guided_local_search():
         penalties = np.zeros(n_assets)
         # atribui o custo das features da solucao conforme o inverso do retorno
         # costs = np.ones(n_assets)
-        costs = r_mean
+        costs = r_std
     
         improve=False
         # inicializa o loop para o busca local com funcao de cus
@@ -574,11 +575,9 @@ def guided_local_search():
 
             lambda_ = alpha * obj_best / s_best[1].sum()
 
-            # calculo funcao de utilidade e penalizacao da feature mais relevante
-            util_idx = utility_function(s_best[1], costs, penalties)
-            penalties[util_idx] = penalties[util_idx] + 1
 
-            sl, obj_l, log = local_search(
+
+            sl, obj_l, improve, log = local_search(
                 s_best, k_min, k_max, d_min, d_max, iter, neighs, alpha, exp_return, 
                 move_strategy,selection_strategy, cov_mx, r_mean, tag, early_stoping, tol,
                 penalties, lambda_
@@ -587,11 +586,14 @@ def guided_local_search():
             if obj_l < obj_best:
                 s_best = copy.deepcopy(sl)
                 obj_best = obj_l
-                improve=True
                 # escapou do minimo local
                 penalties = np.zeros(n_assets)
-            # else:
-                # obj_best = obj_l
+            else:
+                # calculo funcao de utilidade e penalizacao da feature mais relevante
+                util_idx = utility_function(sl[1], costs, penalties)
+                penalties[util_idx] = penalties[util_idx] + 1
+                total_penalties = np.sum(penalties)
+                obj_best = cost_function(s_best, cov_mx, penalties, lambda_)
             
 
 
