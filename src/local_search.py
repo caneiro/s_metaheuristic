@@ -115,6 +115,7 @@ def move_idR(s, alpha, d_min, d_max):
         # a substituicao pelo ativo aj que nao fazia parte da solucao
         if X[ai] > d_max:
             Z[ai] = 0
+            X[ai] = 0
             Z[aj] = 1
             X[aj] = d_max
             
@@ -123,6 +124,7 @@ def move_idR(s, alpha, d_min, d_max):
         X[ai] = X[ai] * fator
         if X[ai] < d_min:
             Z[ai] = 0
+            X[ai] = 0
             Z[aj] = 1
             X[aj] = d_min
 
@@ -162,8 +164,8 @@ def move_idID(s, alpha, d_min, d_max):
             X[ai] = 0
     
     elif op == 2:
-        Z[ai] = 0
-        X[ai] = 0
+        # Z[ai] = 0
+        # X[ai] = 0
         Z[aj] = 1
         X[aj] = d_min
 
