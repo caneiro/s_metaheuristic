@@ -1,5 +1,9 @@
+import numpy as np
+import copy
 
-
+from operators import move_idR, move_idID, move_TID, normalize
+from objectives import cost_function
+from constraints import validation
 
 def neighbours(s, i, alpha, move='random', d_min=0.01, d_max=0.99):
     """
@@ -69,3 +73,42 @@ def initial_solution(n_assets, k, k_min, k_max, d_min, d_max, alpha, exp_return,
         print('>>> Bad Initial Solution | k_min: {} | k_max {} | d_min {} | d_max {} | alpha {} | exp_retur {}'\
             .format(k_min, k_max, d_min, d_max, alpha, exp_return))
         return None
+
+
+def selection(Nv, s_best, cov_mx, strategy='best', type='min', penalties=None, lambda_=0.001):
+
+    if type == 'min':
+        obj_best = cost_function(s_best, cov_mx, penalties, lambda_)
+        improve = False
+
+        if strategy in ['best', 'random']:
+            obj_sn = []
+            for n in Nv:
+                obj_sn.append(cost_function(n, cov_mx, penalties, lambda_))
+            obj_sn = np.array(obj_sn)
+
+            if strategy == 'best':
+                idx_selected = np.argsort(obj_sn)[0]
+                obj_selected = obj_sn[idx_selected]
+                if obj_selected < obj_best:
+                    improve = True
+                    s_best = Nv[idx_selected]
+                    obj_best = obj_sn[idx_selected]
+            
+            elif strategy == 'random':
+                idx_selected = np.where(obj_sn < obj_best)[0]
+                if len(idx_selected) >= 1:
+                    idx_selected = np.random.choice(idx_selected, 1)[0]
+                    improve = True
+                    s_best = Nv[idx_selected]
+                    obj_best = obj_sn[idx_selected]
+        
+        elif strategy == 'first':
+            for n in Nv:
+                obj_sn = cost_function(n, cov_mx, penalties, lambda_)
+                if obj_sn < obj_best:
+                    improve = True
+                    s_best = n
+                    obj_best = obj_sn
+
+    return s_best, obj_best, improve

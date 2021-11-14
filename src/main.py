@@ -1,3 +1,31 @@
+##### LOCAL SEARCH #####
+
+##### ITA | PG-CTE-S | TE-282 - Meta-heurísticas
+##### Professor Dr. Angelo Passaro
+##### Aluno: Rafael Caneiro de Oliveira
+##### Versao: 0.1
+##### Data: 22/10/2021
+
+# conjunto de n ativos A = {a1, ..., an}
+# possuem retorno = {r1, ..., rn}
+# o portfolio é um vetor X = {x1, ..., xn} sendo xi a fraçao do ativo
+# 0 <= xi <= 1 e Soma(xn) = 1
+# restricoes de cardinalidade -> kmin e kmax ativos no portfolio
+# restricoes de quantidade (fracao) de cada asset ->  dmin e dmax
+
+import itertools
+import numpy as np
+import pandas as pd
+import time
+from datetime import datetime
+
+np.set_printoptions(linewidth=100000)
+
+import ray
+import random
+
+from local_search import local_search, ray_local_search
+
 
 def debug():
     global DEBUG
