@@ -1,5 +1,6 @@
 
-
+import numpy as np
+from itertools import combinations
 
 def cost_function(s, cov_mx, penalties=None, lambda_=0.001):
     X, Z = s

@@ -33,13 +33,17 @@ import ray
 import random
 
 from functools import partial
-from operators import move_idR, move_idID, move_TID, normalize
+from objectives import cost_function
+from local_search import local_search
+from search_space import initial_solution
+
 
 DEBUG = False
 SEED = 42
 
 PATH = Path.cwd()
 LOG_PATH = Path(PATH, "./data/log2/")
+
 
 
 
@@ -54,49 +58,6 @@ def utility_function(Z, costs, penalties):
 
 
 
-def selection(Nv, s_best, cov_mx, strategy='best', type='min', penalties=None, lambda_=0.001):
-
-    if type == 'min':
-        obj_best = cost_function(s_best, cov_mx, penalties, lambda_)
-        improve = False
-
-        if strategy in ['best', 'random']:
-            obj_sn = []
-            for n in Nv:
-                obj_sn.append(cost_function(n, cov_mx, penalties, lambda_))
-            obj_sn = np.array(obj_sn)
-
-            if strategy == 'best':
-                idx_selected = np.argsort(obj_sn)[0]
-                obj_selected = obj_sn[idx_selected]
-                if obj_selected < obj_best:
-                    improve = True
-                    s_best = Nv[idx_selected]
-                    obj_best = obj_sn[idx_selected]
-            
-            elif strategy == 'random':
-                idx_selected = np.where(obj_sn < obj_best)[0]
-                if len(idx_selected) >= 1:
-                    idx_selected = np.random.choice(idx_selected, 1)[0]
-                    improve = True
-                    s_best = Nv[idx_selected]
-                    obj_best = obj_sn[idx_selected]
-        
-        elif strategy == 'first':
-            for n in Nv:
-                obj_sn = cost_function(n, cov_mx, penalties, lambda_)
-                if obj_sn < obj_best:
-                    improve = True
-                    s_best = n
-                    obj_best = obj_sn
-
-    return s_best, obj_best, improve
-
-
-
-@ray.remote
-def ray_local_search(params):
-    return local_search(params)
 
 def guided_local_search():
 

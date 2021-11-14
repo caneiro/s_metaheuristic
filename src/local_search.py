@@ -1,6 +1,16 @@
 
+import numpy as np
+import pandas as pd
+import copy
+import time
+import ray
+
+from objectives import cost_function
+from search_space import neighbours, selection
+from constraints import validation, portfolio_return
 
 
+DEBUG=False
 
 def local_search(
     s0, k_min, k_max, d_min, d_max, iter, neighs, alpha,
@@ -172,3 +182,8 @@ def local_search(
     print('Local Search Time: {}'.format(round(total_time, 3)))
 
     return s_best, obj_best, improve, log
+
+
+@ray.remote
+def ray_local_search(params):
+    return local_search(params)
