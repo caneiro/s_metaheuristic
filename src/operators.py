@@ -29,7 +29,7 @@ def normalize(X):
     
     return np.round(X * fator, 6)
 
-def move_idR(s, alpha, d_min, d_max):
+def move_idR(s, alpha):
     """
     idR -> [i]ncrease, [d]ecrease, [R]eplace
     ai é um ativo que pertence a solucao atua S
@@ -38,6 +38,8 @@ def move_idR(s, alpha, d_min, d_max):
     se sign = 1 xi = xi * (1+q) caso contrario xi = xi * (1-q)
 
     """
+    d_min=0.01
+    d_max=1
     # Obtem dados da solucao atual
     X, Z = s
     
@@ -65,13 +67,11 @@ def move_idR(s, alpha, d_min, d_max):
             Z[aj] = 1
             X[aj] = d_min
 
-    k_out = np.sum(Z)
-    # print('Move: idR | k_in: {} | k_out: {}'.format(k_in, k_out))
     X = normalize(X)
     sl = [X, Z]
     return sl
 
-def move_idID(s, alpha, d_min, d_max):
+def move_idID(s, alpha):
     """
     idID -> [i]ncrease, [d]ecrease, [I]nsert, [D]elete
     ai é um ativo que pertence a solucao atua S
@@ -80,9 +80,10 @@ def move_idID(s, alpha, d_min, d_max):
     se sign = 1 xi = xi * (1+q) caso contrario xi = xi * (1-q)
 
     """
+    d_min=0.01
+    d_max=1
     # Obtem dados da solucao atual
     X, Z = s
-    k_in = np.sum(Z)
 
     # Obtem ativos e operador aleatoriamente
     ai, aj, op = aux_move_random_selections(s, [0, 1, 2])
@@ -106,22 +107,19 @@ def move_idID(s, alpha, d_min, d_max):
         Z[aj] = 1
         X[aj] = d_min
 
-    k_out = np.sum(Z)
-    # print('Move: idID | k_in: {} | k_out: {}'.format(k_in, k_out))
-
     X = normalize(X)
     sl = [X, Z]
     return sl
 
-def move_TID(s, alpha, d_min, d_max):
+def move_TID(s, alpha):
     """
     TID  -> [T]ransfer, [I]nsert, [D]elete
     ai é um ativo que pertence a solucao atua S
     aj é um ativo que não pertene solucao atual S
     """
+    d_min=0.01
     # Obtem dados da solucao atual
     X, Z = s
-    k_in = np.sum(Z)
 
     # Obtem ativos e operador aleatoriamente
     ai, _, _ = aux_move_random_selections(s)
@@ -129,8 +127,6 @@ def move_TID(s, alpha, d_min, d_max):
     trans = X[ai] * alpha
     # special case
     if X[ai] - trans < d_min:
-        X[ai] = 0
-        Z[ai] = 0
         # special case II
         if Z[aj] == 0:
             X[aj] = d_min
@@ -138,15 +134,13 @@ def move_TID(s, alpha, d_min, d_max):
         # special case I
         else:
             X[aj] = X[ai]
+        X[ai] = 0
+        Z[ai] = 0
     # operacao normal
     else:
         X[ai] = X[ai] - trans
         X[aj] = X[aj] + trans
         Z[aj] = 1
 
-    k_out = np.sum(Z)
-    # print('Move: TID | k_in: {} | k_out: {}'.format(k_in, k_out))
-
-    # X = normalize(X)
     sl = [X, Z]
     return sl

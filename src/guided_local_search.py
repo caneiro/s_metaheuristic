@@ -21,6 +21,7 @@ import time
 from datetime import datetime
 
 from seaborn.utils import locator_to_legend_entries
+from objectives import augmented_cost_function
 
 np.set_printoptions(linewidth=100000)
 
@@ -36,16 +37,13 @@ from functools import partial
 from objectives import cost_function
 from local_search import local_search
 from search_space import initial_solution
-
+from constraints import portfolio_return
 
 DEBUG = False
 SEED = 42
 
 PATH = Path.cwd()
-LOG_PATH = Path(PATH, "./data/log2/")
-
-
-
+LOG_PATH = Path(PATH, "./data/log/")
 
 def utility_function(Z, costs, penalties):
     z = np.where(Z==1)[0]
@@ -55,33 +53,11 @@ def utility_function(Z, costs, penalties):
     idx = np.argmax(utils)
     return idx
 
-
-
-
-
-def guided_local_search():
-
-    global DEBUG
-    DEBUG = True
-    
-    # parametros
-    n_port = 1
-    k_min = 5
-    k_max = 15
-    k = None
-    d_min = 0.01
-    d_max = 1.00
-    iter = 100
-    neighs = 1000
-    alpha = 0.1
-    # lambda_ = 0.001
-    exp_return = 0.001
-    move_strategy = 'best'
-    selection_strategy = 'best'
-    seed = None
-    tag = 'gls'
-    early_stoping = 10
-    tol = 0.000001
+def guided_local_search(
+    n_port=1, k=5, iter=100, neighs=1000, alpha=0.1, lambda_=1, exp_return=0.001,
+    move_strategy='best', selection_strategy='best', seed=None, tag='gls', 
+    early_stoping=10, tol=0.000001, debug=False
+    ):
 
     np.random.seed(seed)
 
@@ -93,66 +69,96 @@ def guided_local_search():
     n_assets, r_mean, r_std, cov_mx = port
     
     # gera solucao inicial
-    s0 = initial_solution(n_assets, k, k_min, k_max, d_min, d_max, alpha, exp_return, r_mean, cov_mx)
-    if s0 is None:
-        print('Bad GLS')
-    else:
-
-        # # realiza a busca local na solucao inicial
-        # s_best, obj_best, log = local_search(
-        #     s0, k_min, k_max, d_min, d_max, iter, neighs, alpha, exp_return, 
-        #     move_strategy,selection_strategy, cov_mx, r_mean, tag, early_stoping, tol
-        # )
+    s0 = initial_solution(port, k, alpha, exp_return)
+    
+    if s0 is not None:
 
         s_best = copy.deepcopy(s0)
-        obj_best = cost_function(s_best, cov_mx)
-
+        obj_best = cost_function(s_best, port)
+        return_best = portfolio_return(s_best, r_mean)
         # inicializa as penalidade com zero (0)
         penalties = np.zeros(n_assets)
-        # atribui o custo das features da solucao conforme o inverso do retorno
-        # costs = np.ones(n_assets)
+
+        # atribui o custo das features da solucao conforme o desvio padrao do retorno
         costs = r_std
-    
+
+        l_move = []
+        l_improve = []
+        l_obj = []
+        l_aug_obj = []
+        l_return = []
+        l_assets = []
+        l_X = []
+        l_Z = []
+        l_qN = []
+        l_qNv = []
+        l_iter_time = []
+        l_iter = []
+
         improve=False
-        # inicializa o loop para o busca local com funcao de cus
         for i in range(iter):
 
-            lambda_ = alpha * obj_best / s_best[1].sum()
+            w = lambda_ * obj_best / s_best[1].sum()
 
-
-
-            sl, obj_l, improve, log = local_search(
-                s_best, k_min, k_max, d_min, d_max, iter, neighs, alpha, exp_return, 
-                move_strategy,selection_strategy, cov_mx, r_mean, tag, early_stoping, tol,
-                penalties, lambda_
-            )
+            ### procedimento de busca local
+            sl, obj_l, improve_local = local_search(s_best,
+                                                    neighs,
+                                                    k,
+                                                    alpha,
+                                                    port,
+                                                    penalties,
+                                                    w,
+                                                    exp_return,
+                                                    move_strategy)
 
             if obj_l < obj_best:
                 s_best = copy.deepcopy(sl)
                 obj_best = obj_l
+                improve=True
                 # escapou do minimo local
-                penalties = np.zeros(n_assets)
+                # penalties = np.zeros(n_assets)
             else:
                 # calculo funcao de utilidade e penalizacao da feature mais relevante
+                improve=False
                 util_idx = utility_function(sl[1], costs, penalties)
                 penalties[util_idx] = penalties[util_idx] + 1
                 total_penalties = np.sum(penalties)
-                obj_best = cost_function(s_best, cov_mx, penalties, lambda_)
+                obj_best = augmented_cost_function(s_best, port, penalties, w)
             
+            return_best = portfolio_return(s_best, r_mean)
 
+            obj_raw = cost_function(s_best, port)
+            
+            l_obj.append(obj_raw)
+            l_aug_obj.append(obj_best)
+            l_return.append(return_best)
 
-            log['gls_iter'] = i
-            log['gls_improve'] = improve
-            l_logs.append(log)
+            print(i, improve, improve_local, obj_best, obj_raw, w)
 
+        log = pd.DataFrame({
+                'iter':list(range(iter)),
+                'obj':l_obj,
+                'aug_obj':l_aug_obj,
+                'return':l_return,
+        })
+
+        log['max_iter'] = iter
+        log['neighbours'] = neighs
+        log['alpha'] = alpha
+        log['exp_return'] = exp_return
+        log['n_port'] = n_port
+        log['k'] = k
+        log['move_strategy'] = move_strategy
+        log['seed'] = seed
+        log['selection_strategy'] = selection_strategy        
 
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
         mh = 'gls'
         filename = 'log_' + mh + '_' + timestamp + '.csv'
-        gls_log = pd.concat(l_logs)
-        gls_log.to_csv(Path(LOG_PATH, filename), index=False, quotechar='"')
+        log.to_csv(Path(LOG_PATH, filename), index=False, quotechar='"')
 
-        print(improve, obj_l, obj_best)
+
+
 
 if __name__ == "__main__":
     guided_local_search()

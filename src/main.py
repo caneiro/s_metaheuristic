@@ -25,7 +25,8 @@ import ray
 import random
 
 from local_search import local_search, ray_local_search
-
+from load_data import load_port_files
+from search_space import initial_solution
 
 def debug():
     global DEBUG
@@ -107,3 +108,14 @@ def benchmarks():
     run_time = round(end_time - start_time, 3)
     iter_time = round(run_time / len(parameters), 3)
     print('Total time: {} | iter time: {}'.format(run_time, iter_time))
+
+
+def main():
+    # obtem dados do portfolio
+    port = load_port_files(1)
+    for i in range(100):
+        s0, obj_best, improve = initial_solution(port, 5, 0.001, 0.001)
+        print(np.sum(s0[0]), np.sum(s0[1]), obj_best)
+
+if __name__ == "__main__":
+    main()

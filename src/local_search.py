@@ -5,14 +5,20 @@ import copy
 import time
 import ray
 
-from objectives import cost_function
 from search_space import neighbours, selection
 from constraints import validation, portfolio_return
-
+from objectives import cost_function, augmented_cost_function
 
 DEBUG=False
 
-def local_search(
+def local_search(sl, n, k, alpha, port, penalties, w, exp_return, move_strategy='random'):
+    _, r_mean, _, _ = port
+    Ns = neighbours(sl, n, alpha, 'random')
+    Nsv = validation(Ns, exp_return, port, k)
+    s_best, obj_best, improve = selection(Nsv, sl, augmented_cost_function, port, penalties, w)
+    return s_best, obj_best, improve
+
+def local_search_old(
     s0, k_min, k_max, d_min, d_max, iter, neighs, alpha,
     exp_return, move_strategy, selection_strategy,
     cov_mx, r_mean, tag, early_stoping, tol,
@@ -182,7 +188,6 @@ def local_search(
     print('Local Search Time: {}'.format(round(total_time, 3)))
 
     return s_best, obj_best, improve, log
-
 
 @ray.remote
 def ray_local_search(params):
