@@ -20,6 +20,8 @@ import time
 from datetime import datetime
 from pathlib import Path
 
+from guided_local_search import guided_local_search
+
 np.set_printoptions(linewidth=100000)
 
 PATH = Path.cwd()
@@ -34,37 +36,25 @@ from search_space import initial_solution
 from guided_local_search import ray_guided_local_search
 
 def debug():
-    global DEBUG
-    DEBUG = True
-    # restricoes de cardinalidade
-    k_min = 2 # quantidade minima de ativos na solucao
-    k_max = 15
-    k=7
 
-    # restricoes de quantidade
-    d_min = 0.01 # valor minimo de quantidade do ativo (percentual)
-    d_max = 1.00 # valor maximo de quantidade do ativo (percentual)
-
-    # parametros
-    iter = 1000 # iteracoes de busca local
-    neighs = 1000 # neighbours
-    alpha = 0.1 # 'step' -> quantidade de perturbacao para geracao da vizinhanca
-    exp_return = 0.0025 #
-
-    portfolio = 1
-    move_strategy = 'best'
-    selection_strategy = 'best'
-    seed = None
-
-    tag = 'ccef'
+    n_port=1
+    k=1
+    iter=100
+    neighs=100
+    alpha=0.1
+    lambda_=0.1
+    exp_return=0.001
+    move_strategy='best'
+    selection_strategy='best'
+    seed=94
 
     parameters = [
-        k_min, k_max, d_min, d_max, iter, neighs, alpha, exp_return,
-        move_strategy, selection_strategy, portfolio, seed, tag, k
+        n_port, k, iter, neighs, alpha, lambda_,
+        exp_return, move_strategy, selection_strategy, seed
     ]
 
-    log = local_search(parameters)
-    # log.to_csv('log.csv')
+    log = guided_local_search(parameters)
+    print(log.head())
 
     return log
     # ['iDR', 'idID', 'TID']
@@ -74,7 +64,7 @@ def benchmarks():
     start_time = time.time()
 
     l_k = [k+1 for k in range(31)]
-    l_iter = [100]
+    l_iter = [300]
     l_neighs = [100]
     l_alpha = [0.1]
     l_lambda = [0.1]
@@ -85,7 +75,7 @@ def benchmarks():
     l_move_strategy = ['best'] # ['iDR', 'idID', 'TID', 'random', 'best']
     l_selection_strategy = ['best'] # ['best', 'first', 'random']
     l_portfolio = [1] # [1,2,3,4,5]
-    l_seeds = list(range(100))
+    l_seeds = list(range(25))
 
     parameters = [
         l_portfolio, l_k, l_iter, l_neighs, l_alpha, l_lambda, 
@@ -121,4 +111,5 @@ def main():
         print(np.sum(s0[0]), np.sum(s0[1]), obj_best)
 
 if __name__ == "__main__":
+    # debug()
     benchmarks()
