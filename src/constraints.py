@@ -7,11 +7,13 @@ def portfolio_return(s, r_mean):
     return p_return
 
 def validation(N, exp_return, port, k):
-    _, r_mean, _, _ = port
+    n_assets, r_mean, _, _ = port
     d_min=0.01
     d_max=1.00
+    k_min = np.min((1, k-3))
+    k_max = np.max((n_assets, k+3))
     # filtra vizinhos com quantidade de ativos válidas
-    Nv = [sl for sl in N if np.sum(sl[1]) == k]
+    Nv = [sl for sl in N if np.sum(sl[1]) <= k_max and np.sum(sl[1]) >= k_min]
     # filtra vizinhos com proporcoes de ativos válidas
     Nv = [sl for sl in Nv if all(sl[0][np.where(sl[1]==1)] >= d_min) and all(sl[0][np.where(sl[1]==1)] <= d_max)]
     # filtra vizinhos com retorno maior que o retorno experado

@@ -76,7 +76,8 @@ def selection(S, s_best, cost_function, port, penalties, w, strategy='best', typ
             if Cost[idx]>obj_best:
                 improve = True
                 s_best = S[idx]
-                obj_best = Cost[idx] 
+                obj_best = Cost[idx]
+
     return s_best, obj_best, improve
 
 def initial_solution(port, k, alpha, exp_return):
