@@ -20,7 +20,6 @@ import pandas as pd
 import time
 from datetime import datetime
 
-from seaborn.utils import locator_to_legend_entries
 from objectives import augmented_cost_function
 
 np.set_printoptions(linewidth=100000)
@@ -53,12 +52,20 @@ def utility_function(Z, costs, penalties):
     idx = np.argmax(utils)
     return idx
 
-def guided_local_search(
-    n_port=1, k=5, iter=100, neighs=1000, alpha=0.1, lambda_=1, exp_return=0.001,
-    move_strategy='best', selection_strategy='best', seed=None, tag='gls', 
-    early_stoping=10, tol=0.000001, debug=False
-    ):
+def guided_local_search(parameters):
 
+    n_port=parameters[0]
+    k=parameters[1]
+    iter=parameters[2]
+    neighs=parameters[3]
+    alpha=parameters[4]
+    lambda_=parameters[5]
+    exp_return=parameters[6]
+    move_strategy=parameters[7]
+    selection_strategy=parameters[8]
+    seed=parameters[9]
+    
+    
     np.random.seed(seed)
 
     # listas para o log
@@ -110,20 +117,23 @@ def guided_local_search(
                                                     w,
                                                     exp_return,
                                                     move_strategy)
-
-            if obj_l < obj_best:
-                s_best = copy.deepcopy(sl)
-                obj_best = obj_l
-                improve=True
-                # escapou do minimo local
-                # penalties = np.zeros(n_assets)
+            if obj_l is not None:
+                if obj_l < obj_best:
+                    s_best = copy.deepcopy(sl)
+                    obj_best = obj_l
+                    improve=True
+                    # escapou do minimo local
+                    # penalties = np.zeros(n_assets)
+                else:
+                    # calculo funcao de utilidade e penalizacao da feature mais relevante
+                    improve=False
+                    util_idx = utility_function(sl[1], costs, penalties)
+                    penalties[util_idx] = penalties[util_idx] + 1
+                    total_penalties = np.sum(penalties)
+                    obj_best = augmented_cost_function(s_best, port, penalties, w)
             else:
-                # calculo funcao de utilidade e penalizacao da feature mais relevante
                 improve=False
-                util_idx = utility_function(sl[1], costs, penalties)
-                penalties[util_idx] = penalties[util_idx] + 1
-                total_penalties = np.sum(penalties)
-                obj_best = augmented_cost_function(s_best, port, penalties, w)
+
             
             return_best = portfolio_return(s_best, r_mean)
 
@@ -132,14 +142,19 @@ def guided_local_search(
             l_obj.append(obj_raw)
             l_aug_obj.append(obj_best)
             l_return.append(return_best)
+            l_X.append(s_best[0])
+            l_Z.append(s_best[1])
 
-            print(i, improve, improve_local, obj_best, obj_raw, w)
+
+            # print(i, improve, improve_local, obj_best, obj_raw, w)
 
         log = pd.DataFrame({
                 'iter':list(range(iter)),
                 'obj':l_obj,
                 'aug_obj':l_aug_obj,
                 'return':l_return,
+                'X':l_X,
+                'Z':l_Z
         })
 
         log['max_iter'] = iter
@@ -152,13 +167,18 @@ def guided_local_search(
         log['seed'] = seed
         log['selection_strategy'] = selection_strategy        
 
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-        mh = 'gls'
-        filename = 'log_' + mh + '_' + timestamp + '.csv'
-        log.to_csv(Path(LOG_PATH, filename), index=False, quotechar='"')
+        # timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+        # mh = 'gls'
+        # filename = 'log_' + mh + '_' + timestamp + '.csv'
+        # log.to_csv(Path(LOG_PATH, filename), index=False, quotechar='"')
+    else:
+        log=None
 
+    return log
 
-
+@ray.remote
+def ray_guided_local_search(params):
+    return guided_local_search(params)
 
 if __name__ == "__main__":
     guided_local_search()

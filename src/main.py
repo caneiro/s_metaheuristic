@@ -18,15 +18,20 @@ import numpy as np
 import pandas as pd
 import time
 from datetime import datetime
+from pathlib import Path
 
 np.set_printoptions(linewidth=100000)
+
+PATH = Path.cwd()
+LOG_PATH = Path(PATH, "./data/log/")
 
 import ray
 import random
 
-from local_search import local_search, ray_local_search
+from local_search import local_search
 from load_data import load_port_files
 from search_space import initial_solution
+from guided_local_search import ray_guided_local_search
 
 def debug():
     global DEBUG
@@ -42,7 +47,7 @@ def debug():
 
     # parametros
     iter = 1000 # iteracoes de busca local
-    neighs = 100 # neighbours
+    neighs = 1000 # neighbours
     alpha = 0.1 # 'step' -> quantidade de perturbacao para geracao da vizinhanca
     exp_return = 0.0025 #
 
@@ -65,50 +70,48 @@ def debug():
     # ['iDR', 'idID', 'TID']
 
 def benchmarks():
-    
-    global DEBUG
-    DEBUG = False
 
     start_time = time.time()
-    l_k = [7]
-    l_k_min = [2]
-    l_k_max = [15]
-    l_d_min = [0.01]
-    l_d_max = [1.00]
-    l_iter = [1000]
+
+    l_k = [k+1 for k in range(31)]
+    l_iter = [100]
     l_neighs = [100]
     l_alpha = [0.1]
+    l_lambda = [0.1]
     l_exp_return = [
-        0.0010, 0.0015, 0.0020, 0.0025, 0.0030, 0.0035, 0.0040, 0.0045, 0.0050,
-        0.0055, 0.0060, 0.0065, 0.0070, 0.0075, 0.0080, 0.0085, 0.0090, 0.0095, 0.01
+        0.0010, 0.0020, 0.0030, 0.0040, 0.0050,
+        0.0060, 0.0070, 0.0080, 0.0090, 0.01
     ]
-
-    l_move_strategy = ['iDR', 'idID', 'TID', 'random', 'best']
-    l_selection_strategy = ['best', 'first', 'random']
+    l_move_strategy = ['best'] # ['iDR', 'idID', 'TID', 'random', 'best']
+    l_selection_strategy = ['best'] # ['best', 'first', 'random']
     l_portfolio = [1] # [1,2,3,4,5]
-    l_seeds = list(range(10))
-
-    tag = ['ccef']
+    l_seeds = list(range(100))
 
     parameters = [
-        l_k_min, l_k_max, l_d_min, l_d_max, l_iter, l_neighs, l_alpha, l_exp_return,
-        l_move_strategy, l_selection_strategy, l_portfolio, l_seeds, tag, l_k
+        l_portfolio, l_k, l_iter, l_neighs, l_alpha, l_lambda, 
+        l_exp_return, l_move_strategy, l_selection_strategy, l_seeds
     ]
 
     parameters = list(itertools.product(*parameters))
     random.shuffle(parameters)
     print('Number of parameters combinations: {}'.format(len(parameters)))
 
-    ray.init(num_cpus=32)
+    ray.init(num_cpus=16)
 
-    futures = [ray_local_search.remote(param) for param in parameters]
+    futures = [ray_guided_local_search.remote(param) for param in parameters]
     logs = ray.get(futures)
+    log = pd.concat(logs, axis=0, ignore_index=True)
+    log.reset_index(drop=True, inplace=True)
 
     end_time = time.time()
     run_time = round(end_time - start_time, 3)
     iter_time = round(run_time / len(parameters), 3)
     print('Total time: {} | iter time: {}'.format(run_time, iter_time))
 
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+    mh = 'gls'
+    filename = 'log_' + mh + '_' + timestamp + '.csv'
+    log.to_csv(Path(LOG_PATH, filename), index=False, quotechar='"')
 
 def main():
     # obtem dados do portfolio
@@ -118,4 +121,4 @@ def main():
         print(np.sum(s0[0]), np.sum(s0[1]), obj_best)
 
 if __name__ == "__main__":
-    main()
+    benchmarks()

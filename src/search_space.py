@@ -13,9 +13,6 @@ def neighbours(s, i, alpha, move='random'):
     """
     s <- solucao atual
     """
-    # parametros fixos
-    d_min=0.01
-    d_max=1.00
 
     # inicializacao de variaveis
     N = []
@@ -24,22 +21,31 @@ def neighbours(s, i, alpha, move='random'):
         'idID': move_idID,
         'TID':  move_TID
     }
+
     choices = list(moves.keys())
     # verifica qual tipo de geracao de vizinhos sera utilizada
+
     if move=='random':
-        move=np.random.choice(choices)
-    # atribui a funcao de move determinada
-    move = moves[move]
-    for _ in range(i):
-        sl = copy.deepcopy(s)
-        s1 = move(sl, alpha)
-        N.append(s1)
+        for _ in range(i):
+            move=np.random.choice(choices)
+            f_move = moves[move]    
+            sl = copy.deepcopy(s)
+            s1 = f_move(sl, alpha)
+            N.append(s1)
+
+    else:
+        # atribui a funcao de move determinada
+        f_move = moves[move]
+        for _ in range(i):
+            sl = copy.deepcopy(s)
+            s1 = f_move(sl, alpha)
+            N.append(s1)
 
     return N
 
 def selection(S, s_best, cost_function, port, penalties, w, strategy='best', type='min'):
     if len(S)==0:
-        print('Solução inicial impossível')
+        # print('Sem vizinhos válidos')
         obj_best=None
         improve=None
     else:
@@ -107,7 +113,10 @@ def initial_solution(port, k, alpha, exp_return):
 
     Ns = neighbours(sl, 1000, alpha, 'random')
     Nsv = validation(Ns, exp_return, port, k)
-    print(len(Nsv))
-    s0, _, _ = selection(Nsv, sl, augmented_cost_function, port, None, None)
+    # print(k, exp_return, len(Nsv))
+    if len(Nsv) == 0:
+        s0 = None
+    else:
+        s0, _, _ = selection(Nsv, sl, augmented_cost_function, port, None, None)
     return s0
 

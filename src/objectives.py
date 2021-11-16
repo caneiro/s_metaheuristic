@@ -15,7 +15,7 @@ def cost_function(s, port):
         cor_ = cor_mx[i, j]
         obj = np.sum(cor_ * X[i] * X[j]) # * r_std[i] * r_std[j]
 
-    return round(obj, 6)
+    return obj
 
 def cost_function_vectorized(S, cor_mx, r_std):
     
@@ -38,4 +38,4 @@ def augmented_cost_function(s, port, penalties=None, w=0.001):
         aug_cost = np.sum(w * penalties[Z1])
         obj_aug = obj + aug_cost
 
-    return round(obj, 8)
+    return obj
