@@ -63,18 +63,21 @@ def benchmarks():
 
     start_time = time.time()
 
-    l_k = [k+1 for k in range(31)]
-    l_iter = [300]
+    l_k = list(range(1,32,1))
+    l_iter = [500]
     l_neighs = [100]
-    l_alpha = [0.1]
-    l_lambda = [0.1]
+    l_alpha = [0.1, 0.3]
+    l_lambda = [0.1, 0.3]
     l_exp_return = [
+        0.0005, 
         0.0010, 0.0020, 0.0030, 0.0040, 0.0050,
-        0.0060, 0.0070, 0.0080, 0.0090, 0.01
+        0.0015, 0.0025, 0.0035, 0.0045, 0.0055,
+        0.0060, 0.0070, 0.0080, 0.0090, 0.01,
+        0.0065, 0.0075, 0.0085, 0.0095
     ]
     l_move_strategy = ['iDR', 'idID', 'TID', 'random', 'best']
     l_selection_strategy = ['best', 'first', 'random']
-    l_portfolio = [1,2,3,4,5]
+    l_portfolio = [1] # [1,2,3,4,5]
     l_seeds = list(range(100))
 
     parameters = [
