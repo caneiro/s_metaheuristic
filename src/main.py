@@ -78,7 +78,7 @@ def benchmarks():
     l_move_strategy = ['iDR', 'idID', 'TID', 'random', 'best']
     l_selection_strategy = ['best', 'first', 'random']
     l_portfolio = [1] # [1,2,3,4,5]
-    l_seeds = list(range(100))
+    l_seeds = list(range(5))
 
     parameters = [
         l_portfolio, l_k, l_iter, l_neighs, l_alpha, l_lambda, 
@@ -89,7 +89,7 @@ def benchmarks():
     random.shuffle(parameters)
     print('Number of parameters combinations: {}'.format(len(parameters)))
 
-    ray.init(num_cpus=32)
+    ray.init(num_cpus=16)
 
     futures = [ray_guided_local_search.remote(param) for param in parameters]
     logs = ray.get(futures)

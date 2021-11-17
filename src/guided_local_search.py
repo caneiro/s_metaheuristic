@@ -156,7 +156,8 @@ def guided_local_search(parameters):
                 'aug_obj':l_aug_obj,
                 'return':l_return,
                 'X':l_X,
-                'Z':l_Z
+                'Z':l_Z,
+                'Q':l_Q
         })
 
         log['max_iter'] = iter
