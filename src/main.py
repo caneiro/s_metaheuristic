@@ -72,10 +72,10 @@ def benchmarks():
         0.0010, 0.0020, 0.0030, 0.0040, 0.0050,
         0.0060, 0.0070, 0.0080, 0.0090, 0.01
     ]
-    l_move_strategy = ['best'] # ['iDR', 'idID', 'TID', 'random', 'best']
-    l_selection_strategy = ['best'] # ['best', 'first', 'random']
-    l_portfolio = [1] # [1,2,3,4,5]
-    l_seeds = list(range(25))
+    l_move_strategy = ['iDR', 'idID', 'TID', 'random', 'best']
+    l_selection_strategy = ['best', 'first', 'random']
+    l_portfolio = [1,2,3,4,5]
+    l_seeds = list(range(100))
 
     parameters = [
         l_portfolio, l_k, l_iter, l_neighs, l_alpha, l_lambda, 
@@ -86,22 +86,22 @@ def benchmarks():
     random.shuffle(parameters)
     print('Number of parameters combinations: {}'.format(len(parameters)))
 
-    ray.init(num_cpus=16)
+    ray.init(num_cpus=32)
 
     futures = [ray_guided_local_search.remote(param) for param in parameters]
     logs = ray.get(futures)
-    log = pd.concat(logs, axis=0, ignore_index=True)
-    log.reset_index(drop=True, inplace=True)
+    # log = pd.concat(logs, axis=0, ignore_index=True)
+    # log.reset_index(drop=True, inplace=True)
 
     end_time = time.time()
     run_time = round(end_time - start_time, 3)
     iter_time = round(run_time / len(parameters), 3)
     print('Total time: {} | iter time: {}'.format(run_time, iter_time))
 
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-    mh = 'gls'
-    filename = 'log_' + mh + '_' + timestamp + '.csv'
-    log.to_csv(Path(LOG_PATH, filename), index=False, quotechar='"')
+    # timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+    # mh = 'gls'
+    # filename = 'log_' + mh + '_' + timestamp + '.csv'
+    # log.to_csv(Path(LOG_PATH, filename), index=False, quotechar='"')
 
 def main():
     # obtem dados do portfolio

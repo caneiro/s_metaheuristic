@@ -97,6 +97,7 @@ def guided_local_search(parameters):
         l_assets = []
         l_X = []
         l_Z = []
+        l_Q = []
         l_qN = []
         l_qNv = []
         l_iter_time = []
@@ -144,6 +145,7 @@ def guided_local_search(parameters):
             l_return.append(return_best)
             l_X.append(s_best[0])
             l_Z.append(s_best[1])
+            l_Q.append(np.sum(s_best[1]))
 
 
             # print(i, improve, improve_local, obj_best, obj_raw, w)
@@ -167,10 +169,10 @@ def guided_local_search(parameters):
         log['seed'] = seed
         log['selection_strategy'] = selection_strategy        
 
-        # timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
-        # mh = 'gls'
-        # filename = 'log_' + mh + '_' + timestamp + '.csv'
-        # log.to_csv(Path(LOG_PATH, filename), index=False, quotechar='"')
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
+        mh = 'gls'
+        filename = 'log_' + mh + '_' + timestamp + '.csv'
+        log.to_csv(Path(LOG_PATH, filename), index=False, quotechar='"')
     else:
         log=None
 
