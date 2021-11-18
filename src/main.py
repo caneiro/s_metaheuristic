@@ -66,8 +66,8 @@ def benchmarks():
     l_k = list(range(1,32,1))
     l_iter = [500]
     l_neighs = [100]
-    l_alpha = [0.1]
-    l_lambda = [0.1]
+    l_alpha = [0.1, 0.01]
+    l_lambda = [0.1, 0.01]
     l_exp_return = [
         0.0005, 
         0.0010, 0.0020, 0.0030, 0.0040, 0.0050,
@@ -77,8 +77,8 @@ def benchmarks():
     ]
     l_move_strategy = ['iDR', 'idID', 'TID', 'random', 'best']
     l_selection_strategy = ['best', 'first', 'random']
-    l_portfolio = [1] # [1,2,3,4,5]
-    l_seeds = list(range(5))
+    l_portfolio = [1,2,3,4,5]
+    l_seeds = list(range(100))
 
     parameters = [
         l_portfolio, l_k, l_iter, l_neighs, l_alpha, l_lambda, 
