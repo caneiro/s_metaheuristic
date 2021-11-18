@@ -10,8 +10,9 @@ def validation(N, exp_return, port, k):
     n_assets, r_mean, _, _ = port
     d_min=0.01
     d_max=1.00
-    k_min = np.min((1, k-3))
-    k_max = np.max((n_assets, k+3))
+    k_off_set = 0
+    k_min = np.min((1, k-k_off_set))
+    k_max = np.max((n_assets, k+k_off_set))
     # filtra vizinhos com quantidade de ativos válidas
     Nv = [sl for sl in N if np.sum(sl[1]) <= k_max and np.sum(sl[1]) >= k_min]
     # filtra vizinhos com proporcoes de ativos válidas
