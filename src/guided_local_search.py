@@ -28,7 +28,6 @@ from load_data import load_port_files
 from itertools import combinations, product
 import copy
 from pathlib import Path
-from tqdm.auto import tqdm
 import ray
 import random
 
@@ -38,7 +37,7 @@ from local_search import local_search
 from search_space import initial_solution
 from constraints import portfolio_return
 
-DEBUG = False
+DEBUG = True
 SEED = 42
 
 PATH = Path.cwd()
@@ -64,6 +63,7 @@ def guided_local_search(parameters):
     move_strategy=parameters[7]
     selection_strategy=parameters[8]
     seed=parameters[9]
+    tag=parameters[10]
     
     
     np.random.seed(seed)
@@ -87,7 +87,7 @@ def guided_local_search(parameters):
         penalties = np.zeros(n_assets)
 
         # atribui o custo das features da solucao conforme o desvio padrao do retorno
-        costs = r_std
+        costs = 1 / r_mean * r_std
 
         l_move = []
         l_improve = []
@@ -103,12 +103,13 @@ def guided_local_search(parameters):
         l_iter_time = []
         l_iter = []
 
-        improve=False
-        for i in range(iter):
 
+        penalties = np.zeros(n_assets)
+        improve_gls = False
+        for i in range(iter):
             w = lambda_ * obj_best / s_best[1].sum()
 
-            ### procedimento de busca local
+            # procedimento de busca local
             sl, obj_l, improve_local = local_search(s_best,
                                                     neighs,
                                                     k,
@@ -118,37 +119,37 @@ def guided_local_search(parameters):
                                                     w,
                                                     exp_return,
                                                     move_strategy)
-            if obj_l is not None:
-                if obj_l < obj_best:
-                    s_best = copy.deepcopy(sl)
-                    obj_best = obj_l
-                    improve=True
-                    # escapou do minimo local
-                    # penalties = np.zeros(n_assets)
-                else:
-                    # calculo funcao de utilidade e penalizacao da feature mais relevante
-                    improve=False
-                    util_idx = utility_function(sl[1], costs, penalties)
-                    penalties[util_idx] = penalties[util_idx] + 1
-                    total_penalties = np.sum(penalties)
-                    obj_best = augmented_cost_function(s_best, port, penalties, w)
+
+            # calculo funcao de utilidade e penalizacao da feature mais relevante
+            util_idx = utility_function(s_best[1], costs, penalties)
+            penalties[util_idx] = penalties[util_idx] + 1
+
+            # verifica se a solucao encontrada é melhor q a best
+            obj_raw = cost_function(sl, port)
+            if obj_raw < obj_best:
+                improve_gls = True
+                obj_best = obj_raw
+                s_best = copy.deepcopy(sl)
+                penalties = np.zeros(n_assets)
             else:
-                improve=False
+                improve_gls = False
 
-            
-            return_best = portfolio_return(s_best, r_mean)
-
-            obj_raw = cost_function(s_best, port)
-            
-            l_obj.append(obj_raw)
-            l_aug_obj.append(obj_best)
+            tp = penalties.sum()
+    
+            l_obj.append(obj_best)
+            l_aug_obj.append(obj_l)
             l_return.append(return_best)
-            l_X.append(s_best[0])
-            l_Z.append(s_best[1])
-            l_Q.append(np.sum(s_best[1]))
+            X = s_best[0]
+            l_X.append(X)
+            Z = s_best[1]
+            l_Z.append(Z)
+            Q = np.sum(s_best[1])
+            l_Q.append(Q)
 
-
-            # print(i, improve, improve_local, obj_best, obj_raw, w)
+            if DEBUG:
+                print('i {0} | cost {1:.6f} | aug_cost {2:.6f} | Q {3} | gls {4} | local {5} | w {6:.6f} | tp {7} | {8} | {9}'\
+                        .format(i, obj_best, obj_l, Q, improve_gls, improve_local,
+                                w, tp, np.where(penalties>0)[0], np.where(Z==1)[0]))
 
         log = pd.DataFrame({
                 'iter':list(range(iter)),
@@ -168,7 +169,8 @@ def guided_local_search(parameters):
         log['k'] = k
         log['move_strategy'] = move_strategy
         log['seed'] = seed
-        log['selection_strategy'] = selection_strategy        
+        log['selection_strategy'] = selection_strategy
+        log['tag'] = tag 
 
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")
         mh = 'gls'
@@ -183,5 +185,26 @@ def guided_local_search(parameters):
 def ray_guided_local_search(params):
     return guided_local_search(params)
 
+def main():
+    n_port=1
+    k=3
+    iter=300
+    neighs=100
+    alpha=0.3
+    lambda_=0.1
+    exp_return=0.003
+    move_strategy='random' # iDR, idID, TID
+    selection_strategy='best' # best, random, first
+    seed=None
+    tag='testes'
+    parameters = [n_port, k, iter, neighs, alpha, lambda_, 
+                  exp_return, move_strategy, selection_strategy,
+                  seed, tag]
+
+    guided_local_search(parameters)
+
 if __name__ == "__main__":
-    guided_local_search()
+    main()
+
+# 0.016472
+# 0.032453

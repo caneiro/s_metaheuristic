@@ -11,10 +11,11 @@ def validation(N, exp_return, port, k):
     d_min=0.01
     d_max=1.00
     k_off_set = 0
-    k_min = np.min((1, k-k_off_set))
-    k_max = np.max((n_assets, k+k_off_set))
+    k_min = np.max((1, k-k_off_set))
+    k_max = np.min((n_assets, k+k_off_set))
     # filtra vizinhos com quantidade de ativos válidas
     Nv = [sl for sl in N if np.sum(sl[1]) <= k_max and np.sum(sl[1]) >= k_min]
+    Q = [np.sum(sl[1]) for sl in Nv]
     # filtra vizinhos com proporcoes de ativos válidas
     Nv = [sl for sl in Nv if all(sl[0][np.where(sl[1]==1)] >= d_min) and all(sl[0][np.where(sl[1]==1)] <= d_max)]
     # filtra vizinhos com retorno maior que o retorno experado

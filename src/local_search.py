@@ -9,11 +9,11 @@ from search_space import neighbours, selection
 from constraints import validation, portfolio_return
 from objectives import cost_function, augmented_cost_function
 
-DEBUG=False
+DEBUG=True
 
 def local_search(sl, n, k, alpha, port, penalties, w, exp_return, move_strategy='random'):
     _, r_mean, _, _ = port
-    Ns = neighbours(sl, n, alpha, 'random')
+    Ns = neighbours(sl, n, alpha, move_strategy)
     Nsv = validation(Ns, exp_return, port, k)
     s_best, obj_best, improve = selection(Nsv, sl, augmented_cost_function, port, penalties, w)
     return s_best, obj_best, improve

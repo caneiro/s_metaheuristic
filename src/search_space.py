@@ -9,7 +9,7 @@ from constraints import validation
 from objectives import cost_function
 from objectives import augmented_cost_function
 
-def neighbours(s, i, alpha, move='random'):
+def neighbours(s, i, alpha, move):
     """
     s <- solucao atual
     """
@@ -56,6 +56,7 @@ def selection(S, s_best, cost_function, port, penalties, w, strategy='best', typ
             Cost.append(cost_function(s, port, ))
 
         Cost = np.array(Cost)
+        mCost = Cost.mean()
         
         if strategy=='best':
             idx = np.argmin(Cost) if type=='min' else np.argmax(Cost)

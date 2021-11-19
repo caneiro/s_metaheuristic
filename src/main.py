@@ -29,6 +29,8 @@ LOG_PATH = Path(PATH, "./data/log/")
 
 import ray
 import random
+from tqdm.auto import tqdm
+
 
 from local_search import local_search
 from load_data import load_port_files
@@ -59,15 +61,15 @@ def debug():
     return log
     # ['iDR', 'idID', 'TID']
 
-def benchmarks():
+def benchmarks(seed):
 
     start_time = time.time()
 
     l_k = list(range(1,32,1))
-    l_iter = [500]
+    l_iter = [1000]
     l_neighs = [100]
     l_alpha = [0.1, 0.01]
-    l_lambda = [0.1, 0.01]
+    l_lambda = [0.1]
     l_exp_return = [
         0.0005, 
         0.0010, 0.0020, 0.0030, 0.0040, 0.0050,
@@ -75,14 +77,15 @@ def benchmarks():
         0.0060, 0.0070, 0.0080, 0.0090, 0.01,
         0.0065, 0.0075, 0.0085, 0.0095
     ]
-    l_move_strategy = ['iDR', 'idID', 'TID', 'random', 'best']
-    l_selection_strategy = ['best', 'first', 'random']
-    l_portfolio = [1,2,3,4,5]
-    l_seeds = list(range(100))
+    l_move_strategy = ['iDR', 'idID', 'TID', 'random'] # ['iDR', 'idID', 'TID', 'random']
+    l_selection_strategy = ['best', 'first', 'random'] # ['best', 'first', 'random']
+    l_portfolio = [1]
+    l_seeds = [seed]
+    l_tag = ['single_objective']
 
     parameters = [
         l_portfolio, l_k, l_iter, l_neighs, l_alpha, l_lambda, 
-        l_exp_return, l_move_strategy, l_selection_strategy, l_seeds
+        l_exp_return, l_move_strategy, l_selection_strategy, l_seeds, l_tag
     ]
 
     parameters = list(itertools.product(*parameters))
@@ -106,13 +109,12 @@ def benchmarks():
     # filename = 'log_' + mh + '_' + timestamp + '.csv'
     # log.to_csv(Path(LOG_PATH, filename), index=False, quotechar='"')
 
+    ray.shutdown()
+
 def main():
-    # obtem dados do portfolio
-    port = load_port_files(1)
-    for i in range(100):
-        s0, obj_best, improve = initial_solution(port, 5, 0.001, 0.001)
-        print(np.sum(s0[0]), np.sum(s0[1]), obj_best)
+    for i in tqdm(range(10)):
+        benchmarks(i)
 
 if __name__ == "__main__":
-    # debug()
-    benchmarks()
+    main()
+    # benchmarks(42)
