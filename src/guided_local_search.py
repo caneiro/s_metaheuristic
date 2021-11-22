@@ -1,4 +1,4 @@
-##### LOCAL SEARCH #####
+##### GUIDED LOCAL SEARCH #####
 
 ##### ITA | PG-CTE-S | TE-282 - Meta-heurísticas
 ##### Professor Dr. Angelo Passaro
@@ -37,7 +37,7 @@ from local_search import local_search
 from search_space import initial_solution
 from constraints import portfolio_return
 
-DEBUG = True
+DEBUG = False
 SEED = 42
 
 PATH = Path.cwd()
@@ -109,16 +109,18 @@ def guided_local_search(parameters):
         for i in range(iter):
             w = lambda_ * obj_best / s_best[1].sum()
 
-            # procedimento de busca local
-            sl, obj_l, improve_local = local_search(s_best,
-                                                    neighs,
-                                                    k,
-                                                    alpha,
-                                                    port,
-                                                    penalties,
-                                                    w,
-                                                    exp_return,
-                                                    move_strategy)
+            tp = penalties.sum()
+            if tp<100:
+                # procedimento de busca local
+                sl, obj_l, improve_local = local_search(s_best,
+                                                        neighs,
+                                                        k,
+                                                        alpha,
+                                                        port,
+                                                        penalties,
+                                                        w,
+                                                        exp_return,
+                                                        move_strategy)
 
             # calculo funcao de utilidade e penalizacao da feature mais relevante
             util_idx = utility_function(s_best[1], costs, penalties)
@@ -134,8 +136,8 @@ def guided_local_search(parameters):
             else:
                 improve_gls = False
 
-            tp = penalties.sum()
-    
+            # if tp>0:
+                # print('tp')
             l_obj.append(obj_best)
             l_aug_obj.append(obj_l)
             l_return.append(return_best)
@@ -186,15 +188,15 @@ def ray_guided_local_search(params):
     return guided_local_search(params)
 
 def main():
-    n_port=1
-    k=3
-    iter=300
+    n_port=4
+    k=10
+    iter=1000
     neighs=100
     alpha=0.3
     lambda_=0.1
     exp_return=0.003
     move_strategy='random' # iDR, idID, TID
-    selection_strategy='best' # best, random, first
+    selection_strategy='random' # best, random, first
     seed=None
     tag='testes'
     parameters = [n_port, k, iter, neighs, alpha, lambda_, 

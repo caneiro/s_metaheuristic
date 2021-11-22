@@ -22,12 +22,15 @@ def aux_move_random_selections(s, ops=None):
     
     return ai, aj, op
 
-def normalize(X):
+def normalize(X, Z):
     # normalização para soma de X = 1
-    total_X = X.sum()
-    fator = 1 / total_X
-    
-    return np.round(X * fator, 6)
+    Z1 = np.where(Z==1)[0]
+    E = np.zeros(X.shape[0])
+    E[Z1] = 0.1
+    fator = (1 - np.sum(E)) / np.sum(X)
+    X = (X * fator) + E
+    checkX = X.sum()
+    return np.round(X, 6)
 
 def move_idR(s, alpha):
     """
@@ -38,7 +41,7 @@ def move_idR(s, alpha):
     se sign = 1 xi = xi * (1+q) caso contrario xi = xi * (1-q)
 
     """
-    d_min=0.01
+    d_min=0.1
     d_max=1
     # Obtem dados da solucao atual
     X, Z = s
@@ -67,7 +70,7 @@ def move_idR(s, alpha):
             Z[aj] = 1
             X[aj] = d_min
 
-    X = normalize(X)
+    X = normalize(X, Z)
     sl = [X, Z]
     return sl
 
@@ -80,14 +83,13 @@ def move_idID(s, alpha):
     se sign = 1 xi = xi * (1+q) caso contrario xi = xi * (1-q)
 
     """
-    d_min=0.01
+    d_min=0.1
     d_max=1
     # Obtem dados da solucao atual
     X, Z = s
 
     # Obtem ativos e operador aleatoriamente
     ai, aj, op = aux_move_random_selections(s, [0, 1, 2])
-
     # ciclo de operacao para cada tipo de operador 'aumento' ou 'reducao'
     if op == 1:
         fator = 1 + alpha
@@ -107,7 +109,7 @@ def move_idID(s, alpha):
         Z[aj] = 1
         X[aj] = d_min
 
-    X = normalize(X)
+    X = normalize(X, Z)
     sl = [X, Z]
     return sl
 
@@ -117,7 +119,7 @@ def move_TID(s, alpha):
     ai é um ativo que pertence a solucao atua S
     aj é um ativo que não pertene solucao atual S
     """
-    d_min=0.01
+    d_min=0.1
     # Obtem dados da solucao atual
     X, Z = s
 

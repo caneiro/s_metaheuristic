@@ -12,7 +12,7 @@ def cost_function(s, port):
     else:
         obj = []
         for i, j in combinations(Z1, 2):
-            obj_ = cor_mx[i, j] * X[i] * X[j] # * r_std[i] * r_std[j]
+            obj_ = cor_mx[i, j] * X[i] * X[j] #* r_std[i] * r_std[j]
             obj.append(obj_)
         obj = np.array(obj)
         obj = np.sum(obj)
@@ -22,7 +22,7 @@ def cost_function_vectorized(S, cor_mx, r_std):
     
     return None
 
-def augmented_cost_function(s, port, penalties=None, w=0.001):
+def augmented_cost_function(s, port, penalties, w):
     _, r_mean, r_std, cor_mx = port
     X, Z = s
     Z1 = np.where(Z==1)[0]
@@ -31,7 +31,7 @@ def augmented_cost_function(s, port, penalties=None, w=0.001):
     else:
         obj = []
         for i, j in combinations(Z1, 2):
-            obj_ = cor_mx[i, j] * X[i] * X[j] # * r_std[i] * r_std[j]
+            obj_ = cor_mx[i, j] * X[i] * X[j] #* r_std[i] * r_std[j]
             obj.append(obj_)
         obj = np.array(obj)
         obj = np.sum(obj)

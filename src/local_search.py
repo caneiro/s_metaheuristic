@@ -15,6 +15,9 @@ def local_search(sl, n, k, alpha, port, penalties, w, exp_return, move_strategy=
     _, r_mean, _, _ = port
     Ns = neighbours(sl, n, alpha, move_strategy)
     Nsv = validation(Ns, exp_return, port, k)
+    QN = len(Nsv)
+    Zi = [np.where(s[1]==1) for s in Nsv]
+    Xi = [s[0][np.where(s[1]==1)] for s in Nsv]
     s_best, obj_best, improve = selection(Nsv, sl, augmented_cost_function, port, penalties, w)
     return s_best, obj_best, improve
 

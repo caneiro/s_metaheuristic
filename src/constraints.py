@@ -3,14 +3,17 @@ import numpy as np
 def portfolio_return(s, r_mean):
     X, Z = s
     Z1 = np.where(Z==1)[0]
-    p_return = np.sum(X[Z1] * r_mean[Z1])
-    return p_return
+    p_return = []
+    for i in Z1:
+        p_return.append(X[i] * r_mean[i])
+    p_return = np.array(p_return)
+    return p_return.sum()
 
 def validation(N, exp_return, port, k):
     n_assets, r_mean, _, _ = port
-    d_min=0.01
+    d_min=0.1
     d_max=1.00
-    k_off_set = 0
+    k_off_set = 100
     k_min = np.max((1, k-k_off_set))
     k_max = np.min((n_assets, k+k_off_set))
     # filtra vizinhos com quantidade de ativos válidas

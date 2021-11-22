@@ -21,17 +21,24 @@ def neighbours(s, i, alpha, move):
         'idID': move_idID,
         'TID':  move_TID
     }
-
     choices = list(moves.keys())
     # verifica qual tipo de geracao de vizinhos sera utilizada
 
-    if move=='random':
+    if move=='random_random':
         for _ in range(i):
             move=np.random.choice(choices)
             f_move = moves[move]    
             sl = copy.deepcopy(s)
             s1 = f_move(sl, alpha)
-            N.append(s1)
+            N.append(copy.deepcopy(s1))
+
+    elif move=='random':
+        move=np.random.choice(choices)
+        f_move = moves[move]    
+        for _ in range(i):
+            sl = copy.deepcopy(s)
+            s1 = f_move(sl, alpha)
+            N.append(copy.deepcopy(s1))
 
     else:
         # atribui a funcao de move determinada
@@ -39,11 +46,14 @@ def neighbours(s, i, alpha, move):
         for _ in range(i):
             sl = copy.deepcopy(s)
             s1 = f_move(sl, alpha)
-            N.append(s1)
+            N.append(copy.deepcopy(s1))
 
     return N
 
 def selection(S, s_best, cost_function, port, penalties, w, strategy='best', type='min'):
+    QN = len(S)
+    Zi = [np.where(s[1]==1) for s in S]
+    Xi = [s[0][np.where(s[1]==1)] for s in S]
     if len(S)==0:
         # print('Sem vizinhos válidos')
         obj_best=None
@@ -53,7 +63,7 @@ def selection(S, s_best, cost_function, port, penalties, w, strategy='best', typ
         improve = False
         Cost = []
         for s in S:
-            Cost.append(cost_function(s, port, ))
+            Cost.append(cost_function(s, port, penalties, w))
 
         Cost = np.array(Cost)
         mCost = Cost.mean()
@@ -106,15 +116,18 @@ def initial_solution(port, k, alpha, exp_return):
     # gera os vetores e ajusta para soma = 1
     Z[z] = 1
     X[z] = np.random.uniform(0.01, 1, k)
-    X = normalize(X)
+    X = normalize(X, Z)
     # retorna a solucao inicial S que é uma tupla de X e Z
     sl = [X, Z]
     # sum_X = X.sum()
     # sum_Z = Z.sum()
     # X_selected = X[np.where(Z==1)]
 
-    Ns = neighbours(sl, 1000, alpha, 'random')
+    Ns = neighbours(sl, 10000, alpha, 'random_random')
     Nsv = validation(Ns, exp_return, port, k)
+    QN = len(Ns)
+    Zi = [np.where(s[1]==1) for s in Ns]
+    Xi = [s[0][np.where(s[1]==1)] for s in Ns]
     # print(k, exp_return, len(Nsv))
     if len(Nsv) == 0:
         s0 = None

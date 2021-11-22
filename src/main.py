@@ -80,7 +80,7 @@ def benchmarks(seed):
     l_move_strategy = ['iDR', 'idID', 'TID', 'random'] # ['iDR', 'idID', 'TID', 'random']
     l_selection_strategy = ['best', 'first', 'random'] # ['best', 'first', 'random']
     l_portfolio = [1]
-    l_seeds = [seed]
+    l_seeds = [None]
     l_tag = ['single_objective']
 
     parameters = [
