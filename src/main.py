@@ -70,17 +70,17 @@ def benchmarks(seed):
     l_neighs = [100]
     l_alpha = [0.01]
     l_lambda = [0.1]
-    l_exp_return = [
-        0.0010, 0.0020, 0.0030, 0.0040, 0.0050,
-        0.0060, 0.0070, 0.0080, 0.0090, 0.0100,
-    ]
     # l_exp_return = [
-    #     0.0005, 
     #     0.0010, 0.0020, 0.0030, 0.0040, 0.0050,
-    #     0.0015, 0.0025, 0.0035, 0.0045, 0.0055,
-    #     0.0060, 0.0070, 0.0080, 0.0090, 0.01,
-    #     0.0065, 0.0075, 0.0085, 0.0095
+    #     0.0060, 0.0070, 0.0080, 0.0090, 0.0100,
     # ]
+    l_exp_return = [
+        0.0005, 
+        0.0010, 0.0020, 0.0030, 0.0040, 0.0050,
+        0.0015, 0.0025, 0.0035, 0.0045, 0.0055,
+        0.0060, 0.0070, 0.0080, 0.0090, 0.01,
+        0.0065, 0.0075, 0.0085, 0.0095
+    ]
     l_move_strategy = ['iDR', 'idID', 'TID', 'random'] # ['iDR', 'idID', 'TID', 'random']
     l_selection_strategy = ['best', 'first', 'random'] # ['best', 'first', 'random']
     l_portfolio = [1]
@@ -96,7 +96,7 @@ def benchmarks(seed):
     random.shuffle(parameters)
     print('Number of parameters combinations: {}'.format(len(parameters)))
 
-    ray.init(num_cpus=30)
+    ray.init(num_cpus=16)
 
     futures = [ray_guided_local_search.remote(param) for param in parameters]
     logs = ray.get(futures)
